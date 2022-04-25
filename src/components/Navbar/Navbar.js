@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import { ConfigContext } from "../../providers/ConfigProvider";
+import React, { useContext, useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -17,9 +18,8 @@ import logo from "../../assets/imgs/logo.png";
 const pages = ["home", "circo", "volare", "equilibrio", "about", "contacto"];
 
 const ResponsiveAppBar = (props) => {
+  const idioma = useContext(ConfigContext);
   const [selectedButton, setSelectedButton] = useState("home");
-
-  const { espEng, changeLang } = props;
 
   const [anchorElNav, setAnchorElNav] = useState("");
 
@@ -116,15 +116,21 @@ const ResponsiveAppBar = (props) => {
           </Box>
 
           <Box>
-            <Tooltip title={espEng ? "Change to English" : "Cambiar a Español"}>
+            <Tooltip
+              title={
+                idioma.lang !== "esp"
+                  ? "Change to English"
+                  : "Cambiar a Español"
+              }
+            >
               <span style={{ color: "black" }}>
-                {!espEng ? "Español" : "Ingles"}
+                {idioma.lang === "esp" ? "Español" : "English"}
                 <Switch
                   defaultChecked
                   color="warning"
-                  onClick={() => {
-                    changeLang();
-                  }}
+                  onClick={() =>
+                    idioma.setLanguage(idioma.lang === "eng" ? "esp" : "eng")
+                  }
                 />
               </span>
             </Tooltip>
