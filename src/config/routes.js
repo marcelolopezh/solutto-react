@@ -6,6 +6,7 @@ import Contact from "../pages/Contact/Contact";
 import Circo from "../pages/Circo/Circo";
 import About from "../pages/About/About";
 import Equilibrio from "../pages/Equilibrio/Equilibrio";
+
 const generalRoutes = [
   {
     path: "*",
