@@ -1,4 +1,32 @@
 {
+    "navbar": {
+        "rutas": [
+            {
+                "page": "home",
+                "text": "Home"
+            },
+            {
+                "page": "circo",
+                "text": "Circo"
+            },
+            {
+                "page": "volare",
+                "text": "Volaré"
+            },
+            {
+                "page": "equilibrio",
+                "text": "Equilibrio"
+            },
+            {
+                "page": "about",
+                "text": "About"
+            },
+            {
+                "page": "contacto",
+                "text": "Contacto"
+            }
+        ]
+    },
     "home": {
         "pageTitle": "Inicio",
         "subTitle": "Cía. Solutto Circo",
@@ -29,9 +57,9 @@
         "title": "Fernando Mardones Salazar",
         "content": "Fundador y director de Solutto circo compañía, al sur de Chile, su país de origen. Inicia su trayectoria en el mundo del circo en el año 2000. Cautivado por esta nueva forma de ver la vida decide seguir su sueño, que es hacer circo, viajar, crear, hacer reír, e ir nutriéndose de grandes referentes de la escena universal circense como: Leo Bassi (Ita.), Jesús Jara (Esp.), Luis Bruscas (Arg.), Andrew Jigalov (Rus.), Abner Eisenberg (Usa) Juan Carlos Muñoz/Baltabarin (Chi.), Chacovachi (Arg), entre otros.<br>Su proceso de investigación en esta arte comienza con malabares y de a poco va integrando otras áreas como; Clown, equilibrio y producción, a los cuales a dedicado más de 20 años de tu trayectoria.<br>Durante sus viajes se a puesto a prueba en diferentes culturas, logrando conectar con la esencia única de cualquier calle, parque o feria del mundo, eligiendo estos espacios como su escenario favorito.<br>Enamorado de esta forma de vida, continúa regalando risas y comunicando que es posible vivir en un mundo más amable. "
     },
-    "contact":{
-        "pageTitle" : "Contacto",
+    "contact": {
+        "pageTitle": "Contacto",
         "subtitle": " ",
-        "title" : "Chile - Sudamérica - Europa - El Mundo"
+        "title": "Chile - Sudamérica - Europa - El Mundo"
     }
 }

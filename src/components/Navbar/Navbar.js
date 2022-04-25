@@ -13,10 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
-import FestivalIcon from "@mui/icons-material/Home";
-const pages = ["home", "circo", "volare", "equilibrio", "about", "contacto"];
-
-
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 const ResponsiveAppBar = (props) => {
   const idioma = useContext(ConfigContext);
 
@@ -66,11 +63,11 @@ const ResponsiveAppBar = (props) => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Link to={"/" + page}>
+              {idioma.data.navbar.rutas.map((page) => (
+                <MenuItem key={page.page} onClick={handleCloseNavMenu}>
+                  <Link to={"/" + page.page}>
                     <Typography textAlign="center">
-                      <FestivalIcon /> {page}
+                      <ArrowRightAltIcon fontSize="small"/> {page.text}
                     </Typography>
                   </Link>
                 </MenuItem>
@@ -85,17 +82,17 @@ const ResponsiveAppBar = (props) => {
               marginLeft: "1.2rem",
             }}
           >
-            {pages.map((page) => (
+            {idioma.data.navbar.rutas.map((page) => (
               <Link
-                to={"/" + page}
-                key={page}
+                to={"/" + page.page}
+                key={page.page}
                 style={{ textDecoration: "none" }}
               >
                 <Button
               
                   hover={{ borderBottom: "2px solid #512b5b" }}
                   style={
-                    ruta === "/"+page
+                    ruta === "/"+page.page
                       ? { borderBottom: "2px solid #512b5b" }
                       : { border: "none" }
                   }
@@ -108,7 +105,7 @@ const ResponsiveAppBar = (props) => {
                     fontSize: "17px",
                   }}
                 >
-                  {page}
+                  {page.text}
                 </Button>
               </Link>
             ))}

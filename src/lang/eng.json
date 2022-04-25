@@ -1,4 +1,31 @@
-{
+{ "navbar": {
+    "rutas": [
+        {
+            "page": "home",
+            "text": "Home"
+        },
+        {
+            "page": "circo",
+            "text": "Circus"
+        },
+        {
+            "page": "volare",
+            "text": "I'll Fly"
+        },
+        {
+            "page": "equilibrio",
+            "text": "Balance"
+        },
+        {
+            "page": "about",
+            "text": "About"
+        },
+        {
+            "page": "contacto",
+            "text": "Contact"
+        }
+    ]
+},
     "home": {
         "pageTitle": "Home",
         "subTitle": "Solutto Circus Co",
