@@ -26,18 +26,17 @@ export default function Circo() {
         style={{ background: "black", paddingBottom: "10rem" }}
       >
         <Container fixed>
-          <Grid
-            container
-            rowSpacing={1}
-            columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-          >
+          <Grid container>
             <Grid item xs={12}>
               <h1 className="title">{info.data.circo.title}</h1>
-              <h3 className="content">{parse(info.data.circo.content)}</h3>
+            </Grid>
+          </Grid>
+          <h3 className="content">{parse(info.data.circo.content)}</h3>
+          <Grid container className="justifyContent">
+            <Grid item xs={12} md={8}>
               <img
                 src={img}
-                style={{ width: "60%" }}
-                className="center"
+                style={{ width: "100%" }}
                 alt="Cargando Solutto Img..."
               ></img>
             </Grid>

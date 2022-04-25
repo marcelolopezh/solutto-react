@@ -4,7 +4,7 @@ import React, { Fragment, useContext } from "react";
 import Container from "@mui/material/Container";
 import parse from "html-react-parser";
 import "../../scss/style.scss";
-import img from "../../assets/imgs/img_volare.jpeg";
+import img from "../../assets/imgs/img_volaree.png";
 import Grid from "@mui/material/Grid";
 
 export default function Volare() {
@@ -25,28 +25,19 @@ export default function Volare() {
         style={{ background: "black", paddingBottom: "10rem" }}
       >
         <Container fixed>
-          <Grid
-            container
-            rowSpacing={1}
-            columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-          >
+          <Grid container>
             <Grid item xs={12}>
               <h1 className="title">{info.data.volare.title}</h1>
             </Grid>
           </Grid>
-          <Grid
-            container
-            rowSpacing={1}
-            columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-          >
-            <Grid item xs={6}>
+          <Grid container columnSpacing={4}>
+            <Grid item xs={12} md={7} className="paddingTop3 lineSpacing">
               <h3 className="content">{parse(info.data.volare.content)}</h3>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={5}>
               <img
                 src={img}
-                style={{ width: "80%" }}
-                className="center"
+                width="100%"
                 alt="Cargando Solutto Img..."
               ></img>
             </Grid>

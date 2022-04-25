@@ -8,7 +8,7 @@ import img from "../../assets/imgs/img_solutto.jpeg";
 import Grid from "@mui/material/Grid";
 
 export default function About() {
-  const info = useContext(ConfigContext)
+  const info = useContext(ConfigContext);
   return (
     <Fragment>
       <div
@@ -25,18 +25,14 @@ export default function About() {
         style={{ background: "black", paddingBottom: "10rem" }}
       >
         <Container fixed>
-          <Grid
-            container
-            rowSpacing={1}
-            columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-          >
+          <Grid container>
             <Grid item xs={12}>
               <h1 className="title">{info.data.about.title}</h1>
-              <h3 className="content">{parse(info.data.about.content)}</h3>
+              <h3 className="content lineSpacing">{parse(info.data.about.content)}</h3>
               <img
                 src={img}
                 style={{ width: "60%" }}
-                className="center"
+                className="justifyContent"
                 alt="Cargando Solutto Img..."
               ></img>
             </Grid>

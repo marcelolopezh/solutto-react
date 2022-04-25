@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
-
+import { Typography } from "@mui/material";
+import "../scss/style.scss"
 export default function SoluttoLayout(props) {
   const { children } = props;
 
@@ -15,7 +16,10 @@ export default function SoluttoLayout(props) {
       >
         {children}
       </div>
-      <Footer />
+
+      <Typography variant="h4" className="footerTitle" style={{fontFamily:"anthon"}}>
+        www.solutto.cl
+      </Typography>      <Footer />
     </>
   );
 }

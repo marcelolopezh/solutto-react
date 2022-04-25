@@ -8,19 +8,19 @@ export default function Footer() {
       window.location.replace("http://facebook.com/");
   };
   const instagram = () => {
-    window.open("http://instagram.com/", "_blank") ||
-      window.location.replace("http://instagram.com/");
+    window.open("https://instagram.com/payasosolutto", "_blank") ||
+      window.location.replace("https://instagram.com/payasosolutto");
   };
   const whatsapp = () => {
-    window.open("http://whatsapp.com/", "_blank") ||
-      window.location.replace("http://whatsapp.com/");
+    window.open("https://api.whatsapp.com/send/?phone=56954131523&text=Hola%20Solutto,%20Me%20contacto%20desde%20tu%20p%C3%A1gina%20web&app_absent=0", "_blank") ||
+      window.location.replace("https://api.whatsapp.com/send/?phone=56954131523&text=Hola%20Solutto,%20Me%20contacto%20desde%20tu%20p%C3%A1gina%20web&app_absent=0");
   };
 
   return (
     <>
       <div
         style={{
-          background: " #fed352",
+          background: "#fed352",
           bottom: 0,
           width: "100%",
           textAlign: "center",

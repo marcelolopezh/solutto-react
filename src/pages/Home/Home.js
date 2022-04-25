@@ -2,6 +2,7 @@ import { ConfigContext } from "../../providers/ConfigProvider";
 
 import React, { Fragment, useContext } from "react";
 import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
 import parse from "html-react-parser";
 import "../../scss/style.scss";
 import img from "../../assets/imgs/img_circo.jpg";
@@ -24,12 +25,16 @@ export default function Home() {
         style={{ background: "black", paddingBottom: "10rem" }}
       >
         <Container fixed>
-          <img
-            src={img}
-            style={{ width: "60%" }}
-            className="center"
-            alt="Cargando Solutto Img..."
-          ></img>
+          <Grid container className="justifyContent">
+            <Grid item md={10} xs={12}>
+              <img
+                src={img}
+                style={{ width: "100%" }}
+                alt="Cargando Solutto Img..."
+              ></img>
+            </Grid>
+          </Grid>
+
           <h1 className="title">{info.data.home.title}</h1>
           <h3 className="content">{parse(info.data.home.content)}</h3>
         </Container>

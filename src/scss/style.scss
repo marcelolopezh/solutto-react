@@ -1,24 +1,57 @@
-container-purple {
+@font-face {
+  font-family: "anthon";
+  src: url("../assets/fonts/anthon/anton-regular-webfont.woff2") format("woff2"),
+    url("../assets/fonts/anthon/anton-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: "luthier";
+  src: url("../assets/fonts/luthier/Luthier-Regular.woff2") format("woff2"),
+    url("../assets/fonts/luthier/Luthier-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .pageTitle {
   color: #fed352;
+  font-family: anthon;
+  letter-spacing: 0.1rem;
 }
 .subTitle {
   color: black;
+  font-family: anthon;
+  letter-spacing: 0.1rem;
 }
 .title {
   color: #512b5b;
+  font-family: anthon;
 }
 
 .content {
   text-align: justify;
   color: #fed352;
+  font-family: luthier;
+  font-size: 24px;
 }
-.center {
-  text-align: center;
-  display: block;
+
+.justifyContent {
   justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 100%;
+}
+.paddingTop3 {
+  padding-top: 3rem;
+}
+.paddingTop4 {
+  padding-top: 4rem;
+}
+.lineSpacing {
+  line-height: 1.8rem;
+}
+.footerTitle {
+  color: #fed352;
+  background-color: #512b5b;
+  justify-content: center;
+  text-align: center;
+  padding-top:3.6rem;
 }

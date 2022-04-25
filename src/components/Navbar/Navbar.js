@@ -14,7 +14,6 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 import FestivalIcon from "@mui/icons-material/Home";
-import logo from "../../assets/imgs/logo.png";
 const pages = ["home", "circo", "volare", "equilibrio", "about", "contacto"];
 
 
@@ -38,7 +37,6 @@ const ResponsiveAppBar = (props) => {
     <AppBar position="static" style={{ background: "  #fed352" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <img src={logo} alt="Solutto Logo" style={{ width: "12%" }} />
           <Box sx={{ pr: 5, flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -119,7 +117,7 @@ const ResponsiveAppBar = (props) => {
           <Box>
             <Tooltip
               title={
-                idioma.lang !== "esp"
+                idioma.lang === "esp"
                   ? "Change to English"
                   : "Cambiar a Español"
               }

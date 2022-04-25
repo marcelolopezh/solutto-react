@@ -25,29 +25,16 @@ export default function Equilibrio() {
         style={{ background: "black", paddingBottom: "10rem" }}
       >
         <Container fixed>
-          <Grid
-            container
-            rowSpacing={1}
-            columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-          >
+          <Grid container>
             <Grid item xs={12}>
               <h1 className="title">{info.data.equilibrio.title}</h1>
             </Grid>
           </Grid>
-          <Grid
-            container
-            rowSpacing={1}
-            columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-          >
-            <Grid item xs={6}>
-              <img
-                src={img}
-                style={{ width: "100%" }}
-                className="center"
-                alt="Cargando Solutto Img..."
-              ></img>
+          <Grid container>
+            <Grid item xs={12} md={7} className="paddingTop3">
+              <img src={img} width="100%" alt="Cargando Solutto Img..."></img>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} md={5} className="paddingTop4 lineSpacing">
               <h3 className="content">{parse(info.data.equilibrio.content)}</h3>
             </Grid>
           </Grid>
