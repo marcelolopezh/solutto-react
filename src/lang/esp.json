@@ -2,24 +2,20 @@
     "navbar": {
         "rutas": [
             {
-                "page": "home",
-                "text": "Home"
+                "page": "compania",
+                "text": "Compañia"
+            },
+            {
+                "page": "espectaculos",
+                "text": "Espectáculos"
             },
             {
                 "page": "circo",
                 "text": "Circo"
             },
             {
-                "page": "volare",
-                "text": "Volaré"
-            },
-            {
-                "page": "equilibrio",
-                "text": "Equilibrio"
-            },
-            {
-                "page": "about",
-                "text": "About"
+                "page": "galeria",
+                "text": "Galería"
             },
             {
                 "page": "contacto",
@@ -27,35 +23,43 @@
             }
         ]
     },
-    "home": {
-        "pageTitle": "Inicio",
-        "subTitle": "Cía. Solutto Circo",
-        "title": "Compañía Solutto Circo",
-        "content": "Fundada el año 2008 en la ciudad de Valdivia, Chile.<br>Sus integrantes son Jocelyn Suazo, Javier Aroca, Marcelo López, Javier Flores y Fernando Mardones director de la compañía. <br>Durante el año 2009 la compañía se abre al mundo, con el primer viaje de su director a Europa, experimentando la aventura de trabajar el formato de circo-teatro callejero. <br>A partir del año 2010 se establece definitivamente en la ciudad de Temuco. Es en esta ciudad en donde se hace realidad el sueño de tener una carpa de circo, obteniendo un espacio propio en donde trabajar y crear sus espectáculos, generando varietés temáticas itinerantes con artistas nacionales y locales, organizando giras de formato callejero a lo largo del país. <br>Desde el año 2018 se expande al resto del mundo, visitando 3 continentes: Asia, Europa y Latinoamérica, presentando sus espectáculos en más de 20 países, A participado en festivales de tipo Busker como: “Kultur auf der Strasse” New Ulm, Alemania. “Elx Al Carrer” Elche, España. “Berlin Lach” Berlin, Alemania. “Sonho de Aurora” Luino, Italia. “Mezopotamya Sirk ve Sokak Sanatlan Festivali” San Liurfa, Turquia. Lacustre Fest” Villarrica, Chile."
+    "compania": {
+        "pageTitle": "SOLUCION CLOWN",
+        "subTitle": "Compañía de Circo",
+        "title": "Cía. Solución Clown",
+        "content": "Fundada el año 2008 en la ciudad de Valdivia, Chile.<br>Sus integrantes son Jocelyn Suazo, Javier Aroca, Marcelo López, Javier Flores y Fernando Mardones director de la compañía. <br>Durante el año 2009 la compañía se abre al mundo, con el primer viaje de su director a Europa, experimentando la aventura de trabajar el formato de circo-teatro callejero. <br>A partir del año 2010 se establece definitivamente en la ciudad de Temuco. Es en esta ciudad en donde se hace realidad el sueño de tener una carpa de circo, obteniendo un espacio propio en donde trabajar y crear sus espectáculos, generando varietés temáticas itinerantes con artistas nacionales y locales, organizando giras de formato callejero a lo largo del país. <br>Desde el año 2018 se expande al resto del mundo, visitando 3 continentes: Asia, Europa y Latinoamérica, presentando sus espectáculos en más de 20 países, A participado en festivales de tipo Busker como: “Kultur auf der Strasse” New Ulm, Alemania. “Elx Al Carrer” Elche, España. “Berlin Lach” Berlin, Alemania. “Sonho de Aurora” Luino, Italia. “Mezopotamya Sirk ve Sokak Sanatlan Festivali” San Liurfa, Turquía. Lacustre Fest” Villarrica, Chile.",
+        "title2": "Director de la Compañía",
+        "content2": "Fundador y director de la compañía “Solución Clown”.<br>Inicia su trayectoria en el mundo del circo en el año 2000. Cautivado por esta nueva forma de ver la vida decide seguir su sueño, que es hacer circo, viajar, crear, hacer reír, e ir nutriéndose de grandes referentes de la escena universal circense como: Leo Bassi (Ita.), Jesús Jara (Esp.), Luis Bruscas (Arg.), Andrew Jigalov (Rus.), Abner Eisenberg (Usa), Juan Carlos Muñoz/Baltabarin (Chi.), Chacovachi (Arg.), entre otros. Su proceso de investigación en este arte comienza con malabares y de a poco va integrando otras áreas como: Clown, equilibrio y producción, a los cuales ha dedicado más de 20 años de su trayectoria. Durante sus viajes se ha puesto a prueba en diferentes culturas, logrando conectar con la esencia única de cualquier calle, parque o feria del mundo, eligiendo estos espacios como su escenario favorito. Enamorado de esta forma de vida, continúa regalando risas y comunicando que es posible vivir en un mundo más amable.",
+        "title3": "Producciones de la Compañía",
+        "content3": "En sus cerca de 20 años la compañía se ha dedicado a realizar cientos de producciones artísticas en el sur de Chile abarcando en su plan de acción regiones entre el Bío-Bío, Araucanía, Los Ríos y Los Lagos. Desarrollando un gran abanico de opciones de entretención para distintos tipos de eventos y según la complejidad de lo solicitado por nuestros clientes. Generando de esta manera una red de artistas de todo Chile, destacando las más variadas disciplinas circenses para satisfacer las necesidades de entretención y asombro de todas nuestras producciones. Ya sean estas particulares, instituciones de gobierno, instituciones privadas y/p empresas.<br>Nuestras producciones siempre están relacionadas con las artes en general, pero siempre destacando con nuestro concepto circense."
     },
-    "circo": {
-        "pageTitle": "Circo",
+    "espectaculos": {
+        "pageTitle": "Espectáculos",
         "subTitle": "Cía. Solutto Circo",
-        "title": "Compañía Solutto Circo",
-        "content": "La carpa de circo se utiliza para presentar varietés en donde se funden el estilo circense tradicional con el contemporáneo. Con capacidad de hasta 500 personas, logísticamente se puede trasladar a cualquier lugar, brindando la posibilidad de itinerar en donde sea necesario, logrando llegar hasta ahora, a más de 15.000 personas en la Región de La Araucanía.<br> Los elencos van rotando dependiendo del concepto de la varieté. En los espectáculos se utilizan diversas técnicas como: malabarismo, equilibrio, tela, trapecio y magia entre otros. Los artistas que participan pueden ser locales, nacionales e internacionales, brindando dinamismo y frescura a cada show. De esta forma nos aseguramos de mantener al público atento y siempre dispuesto a volver a disfrutar de cada espectáculo, generando así un vinculo y la necesidad de volver a la carpa.<br>La visión de este proyecto, es poder acercar el circo a lo largo y ancho de todo Chile, llevar este arte a las personas con escaso acceso a bienes culturales, descentralizando así la cultura"
-    },
-    "volare": {
-        "pageTitle": "Volaré",
-        "subTitle": "El Aviador",
-        "title": "Espectáculo de Circo-Teatro de Calle",
-        "content": "Klez Mertimon, intrépido aviador nacido al sur del mundo en medio de un circo pobre por allá por los años 80s. Es quien te invita a experimentar una aventura extraordinaria. Un vuelo tan real como mágico, un plan de vuelo que guiará esta travesía única que nos llevará a disfrutar de todo el riesgo y la emoción que generan el equilibrio y las alturas. Este espectáculo se funde entre el público y las destrezas de Klez, quien transforma su rola viñas en un avión bi plano. Artilugio clave en esta aventura, llena de desafíos donde la imaginación necesita alas para sostenerse. El Clown, el teatro físico, la improvisación y los malabares contribuyen a que este espectáculo tenga un idioma para toda la familia."
+        "title": "Espectáculos",
+        "content": "○ Solución Clown (2008)<br>○ Espectáculo de calle Solutto Circo (2010)<br>○ Espectáculo de variedades circenses 'VARIETE CIRCUS' (2016)<br>○ Espectáculo de circo equilibrio (2018)<br>○ Espectáculo de calle 'Volaré' (2020)",
+        "title2": "Solución Clown (2008)",
+        "content2": "Espectáculo de circo callejero, sus personajes “Solutto y Solvente” apostaron toda su experiencia circense para aventurarse a recorrer el mundo y encontrarse en este espectáculo la “solución clown” para poder viajar por gran parte de Sudamérica, que gracias a este espectáculo les fue posible llevar a cabo esta aventura por más de 2 años recorriendo y repartiendo risas por lugares tan variados de nuestro continente, presentando su espectáculo en la selva ecatuariana, en el caribe colombiano, en los valles sagrados de perú, en la sierra y costa ecuatoriana, en los alto del a paz en Bolivia, Argentina entre otros lugares",
+        "title3": "Solutto Circo (2010)",
+        "content3": "Espectáculo de circo callejero, sus personajes ‘Solito y Colvente’ apostaron toda su experiencia para  aventurarse a recorrer el mundo y encontraron en este espectáculo la ‘Solución Clown’ para poder viajar por gran parte de Sudamérica. Gracias a este espectáculo les fue posible llevar a cabo este proyecto y aventurarse por más de 2 años a recorrer sin parar con el fin de ir repartiendo risas por  lugares tan variados de nuestroo continente y además presentando este espectáculo en lugares tan hermosos con la selva y el caribe colombiano, en los valles sagrados o en las playas del norte de perú, en la sierra, selva y costa ecuatoriana, en lo alto de La Paz o en el oriente boliviano. Plazas de argentina y chile por nombrar algunos lugares.",
+        "title4": "",
+        "content4": "",
+        "title5": "Espectáculo de Circo de Calle - Equilibrio",
+        "content5": "Las habilidades de “Solutto” un hábil y elegante malabarista, payaso, globologo y sin duda un elegante charlatán,  sobre su rola bola comienza el juego con los espectadores,  quienes lo acompañan y disfrutan ser parte de la magia del show, es así como van apareciendo en escena malabares, equilibrios y sorpresas que mantienen al público  cautivo y con ganas de más.  La música, el clown y el bufón generan una atmosfera asombrosa y divertida disponible para toda la familia, en cualquier parte del mundo.",
+        "title6": "Espectáculo de Circo de Calle - Volaré",
+        "content6": "Klez Mertimón; intrépido aviador, nacido al sur del mundo en medio de un circo pobre por los años 80s. es quien te invita a experimentar una aventura extraordinaria. Un vuelo tan real como mágico, un plan de vuelo que guiara esta travesía única que nos llevara a disfrutar de todo el riesgo, la emoción y el vértigo que generan el equilibrio y las alturas. Este espectáculo se funde entre el publico y las destrezas de Klez, quien sobre su avión biplano, artilugio clave en esta historia, llena de desafíos donde la imaginación necesitara alas para sostenerse. El Clown, el teatro físico, la improvisación, el circo y los malabares contribuyen a que este espectáculo tenga un idioma universal y para toda la familia."
     },
     "equilibrio": {
         "pageTitle": "Equilibrio",
         "subTitle": "Payaso Solutto",
         "title": "Espectáculo de Circo-Teatro de Calle",
-        "content": "Las habilidades de “Solutto” un intrépido payaso equilibrista, sobre su rola bola comienza el juego con los espectadores, quienes lo acompañan y disfrutan ser parte de la magia del show, es así como van apareciendo en escena malabares, equilibrios y sorpresas que mantienen al público cautivo y con ganas de más. La música, el clown y el bufón generan una atmosfera asombrosa y divertida disponible para toda la familia, en cualquier parte del mundo."
+        "content": "Las habilidades de “Solutto” un intrépido payaso equilibrista, sobre su “rola bola“ comienza el juego con los espectadores, quienes lo acompañan y disfrutan ser parte de la magia del show, es así como van apareciendo en escena malabares, equilibrios y sorpresas que mantienen al público cautivo y con ganas de más. La música, el clown y el bufón generan una atmósfera asombrosa y divertida disponible para toda la familia, en cualquier parte del mundo."
     },
     "about": {
         "pageTitle": "Quien Soy",
         "subTitle": " ",
         "title": "Fernando Mardones Salazar",
-        "content": "Fundador y director de Solutto circo compañía, al sur de Chile, su país de origen. Inicia su trayectoria en el mundo del circo en el año 2000. Cautivado por esta nueva forma de ver la vida decide seguir su sueño, que es hacer circo, viajar, crear, hacer reír, e ir nutriéndose de grandes referentes de la escena universal circense como: Leo Bassi (Ita.), Jesús Jara (Esp.), Luis Bruscas (Arg.), Andrew Jigalov (Rus.), Abner Eisenberg (Usa) Juan Carlos Muñoz/Baltabarin (Chi.), Chacovachi (Arg), entre otros.<br>Su proceso de investigación en esta arte comienza con malabares y de a poco va integrando otras áreas como; Clown, equilibrio y producción, a los cuales a dedicado más de 20 años de tu trayectoria.<br>Durante sus viajes se a puesto a prueba en diferentes culturas, logrando conectar con la esencia única de cualquier calle, parque o feria del mundo, eligiendo estos espacios como su escenario favorito.<br>Enamorado de esta forma de vida, continúa regalando risas y comunicando que es posible vivir en un mundo más amable. "
+        "content": "Fundador y director de Solutto circo compañía, al sur de Chile, su país de origen. Inicia su trayectoria en el mundo del circo en el año 2000. Cautivado por esta nueva forma de ver la vida decide seguir su sueño, que es hacer circo, viajar, crear, hacer reír, e ir nutriéndose de grandes referentes de la escena universal circense como: Leo Bassi (Ita.), Jesús Jara (Esp.), Luis Bruscas (Arg.), Andrew Jigalov (Rus.), Abner Eisenberg (Usa) Juan Carlos Muñoz/Baltabarin (Chi.), Chacovachi (Arg), entre otros.<br>Su proceso de investigación en este arte comienza con malabares y de a poco va integrando otras áreas como; Clown, equilibrio y producción, a los cuales ha dedicado más de 20 años de tu trayectoria.<br>Durante sus viajes se ha puesto a prueba en diferentes culturas, logrando conectar con la esencia única de cualquier calle, parque o feria del mundo, eligiendo estos espacios como su escenario favorito.<br>Enamorado de esta forma de vida, continúa regalando risas y comunicando que es posible vivir en un mundo más amable. "
     },
     "contact": {
         "pageTitle": "Contacto",

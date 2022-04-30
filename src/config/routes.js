@@ -1,11 +1,12 @@
 import SoluttoLayout from "../layouts/SoluttoLayout";
 import Error from "../pages/Error/Error";
-import Home from "../pages/Home/Home";
-import Volare from "../pages/Volare/Volare";
+import Compania from "../pages/Compania/Compania";
 import Contact from "../pages/Contact/Contact";
-import Circo from "../pages/Circo/Circo";
+import Espectaculos from "../pages/Espectaculos/Espectaculos";
 import About from "../pages/About/About";
 import Equilibrio from "../pages/Equilibrio/Equilibrio";
+import Home from "../pages/Home/Home";
+import HomeLayout from "../layouts/HomeLayout";
 
 const generalRoutes = [
   {
@@ -14,24 +15,24 @@ const generalRoutes = [
     component: Error,
   },
   {
-    path: "/home",
+    path:"/",
+    layout:HomeLayout,
+    component:Home
+  },
+  {
+    path: "/compania",
     layout: SoluttoLayout,
-    component: Home,
+    component: Compania,
   },
   {
     path: "/",
     layout: SoluttoLayout,
-    component: Home,
+    component: Compania,
   },
   {
-    path: "/circo",
+    path: "/espectaculos",
     layout: SoluttoLayout,
-    component: Circo,
-  },
-  {
-    path: "/volare",
-    layout: SoluttoLayout,
-    component: Volare,
+    component: Espectaculos,
   },
   {
     path: "/equilibrio",

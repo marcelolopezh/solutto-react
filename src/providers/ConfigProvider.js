@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createContext } from "react";
+import React, { useState, createContext } from "react";
 import eng from "../lang/eng.json";
 import esp from "../lang/esp.json";
 export const ConfigContext = createContext();

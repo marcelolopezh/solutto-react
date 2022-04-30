@@ -1,8 +1,6 @@
 import React, { Fragment } from "react";
 import Container from "@mui/material/Container";
-import parse from "html-react-parser";
 import "../../scss/style.scss";
-import img from "../../assets/imgs/img_circo.jpg";
 export default function Error() {
   return (
     <Fragment>

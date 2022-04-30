@@ -13,7 +13,15 @@ import Tooltip from "@mui/material/Tooltip";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+
+import GroupsIcon from "@mui/icons-material/Groups";
+import TheaterComedyIcon from "@mui/icons-material/TheaterComedy";
+import FestivalIcon from "@mui/icons-material/Festival";
+import InsertPhotoIcon from "@mui/icons-material/InsertPhoto";
+import ContactsIcon from "@mui/icons-material/Contacts";
+
+import "../../scss/style.scss";
 const ResponsiveAppBar = (props) => {
   const idioma = useContext(ConfigContext);
 
@@ -30,6 +38,20 @@ const ResponsiveAppBar = (props) => {
   let ruta = window.location.pathname;
   if (ruta === "/") ruta = "/home";
 
+  function iconSwitch(icon) {
+    switch (icon) {
+      case "compania":
+        return <GroupsIcon />;
+      case "espectaculos":
+        return <TheaterComedyIcon />;
+      case "circo":
+        return <FestivalIcon />;
+      case "galeria":
+        return <InsertPhotoIcon />;
+      case "contacto":
+        return <ContactsIcon />;
+    }
+  }
   return (
     <AppBar position="static" style={{ background: "  #fed352" }}>
       <Container maxWidth="xl">
@@ -64,10 +86,17 @@ const ResponsiveAppBar = (props) => {
               }}
             >
               {idioma.data.navbar.rutas.map((page) => (
-                <MenuItem key={page.page} onClick={handleCloseNavMenu}>
-                  <Link to={"/" + page.page}>
+                <MenuItem
+                  key={page.page}
+                  onClick={handleCloseNavMenu}
+                  style={{
+                    backgroundColor: "#fed352",
+                  }}
+                >
+                  <Link to={"/" + page.page} style={{ textDecoration: "none" }}>
                     <Typography textAlign="center">
-                      <ArrowRightAltIcon fontSize="small"/> {page.text}
+                      {iconSwitch(page.page)}
+                      <span style={{marginLeft:"1rem"}}>{page.text}</span>
                     </Typography>
                   </Link>
                 </MenuItem>
@@ -89,10 +118,9 @@ const ResponsiveAppBar = (props) => {
                 style={{ textDecoration: "none" }}
               >
                 <Button
-              
                   hover={{ borderBottom: "2px solid #512b5b" }}
                   style={
-                    ruta === "/"+page.page
+                    ruta === "/" + page.page
                       ? { borderBottom: "2px solid #512b5b" }
                       : { border: "none" }
                   }

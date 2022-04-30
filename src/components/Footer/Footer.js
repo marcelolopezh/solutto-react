@@ -2,6 +2,7 @@ import React from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+
 export default function Footer() {
   const facebook = () => {
     window.open("https://www.facebook.com/payasosolutto/", "_blank") ||
