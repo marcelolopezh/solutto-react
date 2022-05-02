@@ -1,17 +1,21 @@
 .body {
   height: 100vh;
 }
+
 .bg {
   background-image: url("../assets/imgs/background-home.png");
-  height: 100vh;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .idiomaText {
   color: white;
   font-weight: 100;
-  background-color:rgba(172, 36, 213, 0.404);
+  background-color: rgba(172, 36, 213, 0.404);
   text-align: center;
 }

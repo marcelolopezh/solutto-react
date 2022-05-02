@@ -5,9 +5,10 @@ import Container from "@mui/material/Container";
 import parse from "html-react-parser";
 import "../../scss/style.scss";
 import img from "../../assets/imgs/img_volaree.png";
+import volare from "../../assets/imgs/img_volareee.png";
 import Grid from "@mui/material/Grid";
 import Fade from "react-reveal/Fade";
-import DividerSolutto from "../../components/Divider/DividerSolutto"
+import DividerSolutto from "../../components/Divider/DividerSolutto";
 export default function Espectaculos() {
   const info = useContext(ConfigContext);
   return (
@@ -45,17 +46,19 @@ export default function Espectaculos() {
             </Grid>
             <Grid item xs={12} md={5}>
               <Fade right>
-                <img src={img} width="100%" alt="Cargando Solutto Img..."></img>
+                <img src={img} className="frame" width="100%" alt="Cargando Solutto Img..."></img>
               </Fade>
             </Grid>
           </Grid>
         </Container>
-        <DividerSolutto/>
+        <DividerSolutto />
         <Container fixed className="bgSolutto2008">
           <Grid container>
             <Grid item xs={12}>
               <Fade left>
-                <h1 style={{color:"white"}}>{info.data.espectaculos.title2}</h1>
+                <h1 style={{ color: "white" }}>
+                  {info.data.espectaculos.title2}
+                </h1>
               </Fade>
             </Grid>
           </Grid>
@@ -70,13 +73,15 @@ export default function Espectaculos() {
             </Grid>
           </Grid>
         </Container>
-        <DividerSolutto/>
+        <DividerSolutto />
 
-        <Container fixed className="bgSolutto2008">
+        <Container fixed className="bgSoluttoCirco">
           <Grid container>
             <Grid item xs={12}>
               <Fade left>
-                <h1 style={{color:"white"}}>{info.data.espectaculos.title3}</h1>
+                <h1 style={{ color: "white" }}>
+                  {info.data.espectaculos.title3}
+                </h1>
               </Fade>
             </Grid>
           </Grid>
@@ -84,7 +89,7 @@ export default function Espectaculos() {
           <Grid container columnSpacing={4}>
             <Grid item xs={12} md={12} className="paddingTop3 lineSpacing">
               <Fade left>
-                <h3 className="content">
+                <h3 className="content" style={{position:"bottom"}}>
                   {parse(info.data.espectaculos.content3)}
                 </h3>
               </Fade>
@@ -92,13 +97,15 @@ export default function Espectaculos() {
           </Grid>
         </Container>
 
-        <DividerSolutto/>
+        <DividerSolutto />
 
         <Container fixed className="bgSolutto2008">
           <Grid container>
             <Grid item xs={12}>
               <Fade left>
-                <h1 style={{color:"white"}}>{info.data.espectaculos.title4}</h1>
+                <h1 style={{ color: "white" }}>
+                  {info.data.espectaculos.title4}
+                </h1>
               </Fade>
             </Grid>
           </Grid>
@@ -114,13 +121,15 @@ export default function Espectaculos() {
           </Grid>
         </Container>
 
-        <DividerSolutto/>
+        <DividerSolutto />
 
         <Container fixed className="bgSolutto2008">
           <Grid container>
             <Grid item xs={12}>
               <Fade left>
-                <h1 style={{color:"white"}}>{info.data.espectaculos.title5}</h1>
+                <h1 style={{ color: "white" }}>
+                  {info.data.espectaculos.title5}
+                </h1>
               </Fade>
             </Grid>
           </Grid>
@@ -136,23 +145,30 @@ export default function Espectaculos() {
           </Grid>
         </Container>
 
-        <DividerSolutto/>
+        <DividerSolutto />
 
-        <Container fixed className="bgSolutto2008">
+        <Container fixed className="">
           <Grid container>
             <Grid item xs={12}>
               <Fade left>
-                <h1 style={{color:"white"}}>{info.data.espectaculos.title6}</h1>
+                <h1 style={{ color: "#512b5b" }}>
+                  {info.data.espectaculos.title6}
+                </h1>
               </Fade>
             </Grid>
           </Grid>
 
           <Grid container columnSpacing={4}>
-            <Grid item xs={12} md={12} className="paddingTop3 lineSpacing">
+            <Grid item xs={12} md={7} className="paddingTop3 lineSpacing">
               <Fade left>
-                <h3 className="content">
+                <h2 className="content">
                   {parse(info.data.espectaculos.content6)}
-                </h3>
+                </h2>
+              </Fade>
+            </Grid>
+            <Grid item xs={12} md={5} className="">
+              <Fade rigth>
+                <img src={volare} className="frame" alt="Volare Img ..." width={"100%"} />
               </Fade>
             </Grid>
           </Grid>

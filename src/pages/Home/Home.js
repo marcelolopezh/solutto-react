@@ -20,12 +20,12 @@ export default function Home() {
     return navigate("/compania");
   };
   return (
-    <div className="bg">
+    <div className="bg frame" >
       <Box
         style={{
           position: "absolute",
           left: "50%",
-          top: "10%",
+          top: "5%",
           transform: "translate(-50%, -10%)",
         }}
       >
