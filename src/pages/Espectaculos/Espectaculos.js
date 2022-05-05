@@ -9,8 +9,20 @@ import volare from "../../assets/imgs/img_volareee.png";
 import Grid from "@mui/material/Grid";
 import Fade from "react-reveal/Fade";
 import DividerSolutto from "../../components/Divider/DividerSolutto";
-export default function Espectaculos() {
+import GaleriaVolare from "../Galeria/GaleriaVolare";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+const Espectaculos = () => {
   const info = useContext(ConfigContext);
+  const particlesInit = async (main) => {
+    console.log(main);
+
+    await loadFull(main);
+  };
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
   return (
     <Fragment>
       <div
@@ -25,9 +37,86 @@ export default function Espectaculos() {
         </Container>
       </div>
       <div
-        className="container-black"
+        className="gradient"
         style={{ background: "black", paddingBottom: "10rem" }}
       >
+        <Particles
+          id="tsparticles"
+          init={particlesInit}
+          loaded={particlesLoaded}
+          options={{
+            background: {
+              color: {
+                value: "transparent",
+              },
+            },
+            fpsLimit: 400,
+            interactivity: {
+              events: {
+                onClick: {
+                  enable: false,
+                  mode: "push",
+                },
+                onHover: {
+                  enable: true,
+                  mode: "repulse",
+                },
+                resize: true,
+              },
+              modes: {
+                push: {
+                  quantity: 4,
+                },
+                repulse: {
+                  distance: 10,
+                  duration: 0.4,
+                },
+              },
+            },
+            particles: {
+              color: {
+                value: "#F7EC1E",
+              },
+              links: {
+                color: "red",
+                distance: 200,
+                enable: true,
+                opacity: 0.1,
+                width: 4,
+              },
+              collisions: {
+                enable: true,
+              },
+              move: {
+                direction: "none",
+                enable: true,
+                outModes: {
+                  default: "bounce",
+                },
+                random: true,
+                speed: 2,
+                straight: true,
+              },
+              number: {
+                density: {
+                  enable: true,
+                  area: 800,
+                },
+                value: 80,
+              },
+              opacity: {
+                value: 0.3,
+              },
+              shape: {
+                type: "circle",
+              },
+              size: {
+                value: { min: 1, max: 5 },
+              },
+            },
+            detectRetina: true,
+          }}
+        />
         <Container fixed>
           <Grid container>
             <Grid item xs={12}>
@@ -46,7 +135,12 @@ export default function Espectaculos() {
             </Grid>
             <Grid item xs={12} md={5}>
               <Fade right>
-                <img src={img} className="frame" width="100%" alt="Cargando Solutto Img..."></img>
+                <img
+                  src={img}
+                  className="frame"
+                  width="100%"
+                  alt="Cargando Solutto Img..."
+                ></img>
               </Fade>
             </Grid>
           </Grid>
@@ -89,7 +183,7 @@ export default function Espectaculos() {
           <Grid container columnSpacing={4}>
             <Grid item xs={12} md={12} className="paddingTop3 lineSpacing">
               <Fade left>
-                <h3 className="content" style={{position:"bottom"}}>
+                <h3 className="content" style={{ position: "bottom" }}>
                   {parse(info.data.espectaculos.content3)}
                 </h3>
               </Fade>
@@ -168,12 +262,19 @@ export default function Espectaculos() {
             </Grid>
             <Grid item xs={12} md={5} className="">
               <Fade rigth>
-                <img src={volare} className="frame" alt="Volare Img ..." width={"100%"} />
+                <img
+                  src={volare}
+                  className="frame"
+                  alt="Volare Img ..."
+                  width={"100%"}
+                />
               </Fade>
             </Grid>
           </Grid>
+          <GaleriaVolare />
         </Container>
       </div>
     </Fragment>
   );
-}
+};
+export default Espectaculos;

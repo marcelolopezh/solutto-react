@@ -74,13 +74,6 @@
   background-size: cover;
 }
 
-.bgSolutto2 {
-  background-image: url("../assets/imgs/soluttoTrans2.png");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .bgSoluttoCirco {
   background-image: url("../assets/imgs/soluttoCirco.png");
@@ -134,4 +127,37 @@
 
 .gradient {
   background-color: black;
+  /* The image used */
+  background-image: url("../assets/imgs/soluttoTrans2.png");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image-gallery {
+  width: 100%;
+  height: auto;
+}
+
+.image-gallery-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center center;
+}
+
+.fullscreen .image-gallery-slide img {
+  max-height: 100vh;
+}
+
+.containerSolutto{
+  height: 100vh;
+  background-color: rgba($color: #aaaaaa, $alpha: 0.04);
 }

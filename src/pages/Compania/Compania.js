@@ -119,14 +119,14 @@ const Compania = () => {
           }}
         />
         <Fade right>
-          <Container className="bgSolutto">
+          <Container className="containerSolutto">
             <h1 className="title">{info.data.compania.title}</h1>
             <h3 className="content">{parse(info.data.compania.content)}</h3>
           </Container>
         </Fade>
         <DividerSolutto />
         <Fade right>
-          <Container fixed className="bgSolutto2" style={{ marginTop: "2rem" }}>
+          <Container fixed className="containerSolutto" style={{ marginTop: "2rem" }}>
             <Grid container columnSpacing={0}>
               <Grid item md={7} xs={12}>
                 <h1 className="titleFernando">{info.data.compania.title2}</h1>
@@ -142,8 +142,9 @@ const Compania = () => {
           </Container>
         </Fade>
         <DividerSolutto />
+        <br/>
         <Fade right>
-          <Container fixed className="bgSolutto2">
+          <Container fixed className="containerSolutto">
             <h1 className="title">{info.data.compania.title3}</h1>
             <h3 className="content">{parse(info.data.compania.content3)}</h3>
           </Container>

@@ -13,7 +13,6 @@ import Tooltip from "@mui/material/Tooltip";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 import GroupsIcon from "@mui/icons-material/Groups";
 import TheaterComedyIcon from "@mui/icons-material/TheaterComedy";
@@ -91,6 +90,7 @@ const ResponsiveAppBar = (props) => {
                   onClick={handleCloseNavMenu}
                   style={{
                     backgroundColor: "#fed352",
+                    margin:"-0.4rem"
                   }}
                 >
                   <Link to={"/" + page.page} style={{ textDecoration: "none" }}>
@@ -133,7 +133,7 @@ const ResponsiveAppBar = (props) => {
                     fontSize: "17px",
                   }}
                 >
-                  {page.text}
+                  {page.text} /
                 </Button>
               </Link>
             ))}
