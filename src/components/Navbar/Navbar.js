@@ -52,8 +52,10 @@ const ResponsiveAppBar = (props) => {
     }
   }
   return (
-    <AppBar position="static" style={{ background: "  #fed352" }}>
-      <Container maxWidth="xl">
+    <div style={{ background: "#512b5b"}}>
+    <AppBar position="static" style={{ background: "#fed352", backgroundColor: "#fed352", borderRadius: "360px" }}>
+      
+      <Container maxWidth="xl" >
         <Toolbar disableGutters>
           <Box sx={{ pr: 5, flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -90,13 +92,13 @@ const ResponsiveAppBar = (props) => {
                   onClick={handleCloseNavMenu}
                   style={{
                     backgroundColor: "#fed352",
-                    margin:"-0.4rem"
+                    margin: "-0.4rem"
                   }}
                 >
                   <Link to={"/" + page.page} style={{ textDecoration: "none" }}>
                     <Typography textAlign="center">
                       {iconSwitch(page.page)}
-                      <span style={{marginLeft:"1rem"}}>{page.text}</span>
+                      <span style={{ marginLeft: "1rem" }}>{page.text}</span>
                     </Typography>
                   </Link>
                 </MenuItem>
@@ -162,6 +164,7 @@ const ResponsiveAppBar = (props) => {
         </Toolbar>
       </Container>
     </AppBar>
+    </div>
   );
 };
 export default ResponsiveAppBar;

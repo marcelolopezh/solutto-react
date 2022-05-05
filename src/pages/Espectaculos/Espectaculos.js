@@ -4,25 +4,21 @@ import React, { Fragment, useContext } from "react";
 import Container from "@mui/material/Container";
 import parse from "html-react-parser";
 import "../../scss/style.scss";
-import img from "../../assets/imgs/img_volaree.png";
 import volare from "../../assets/imgs/img_volareee.png";
 import Grid from "@mui/material/Grid";
 import Fade from "react-reveal/Fade";
 import DividerSolutto from "../../components/Divider/DividerSolutto";
 import GaleriaVolare from "../Galeria/GaleriaVolare";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+
+
+import img1 from "../../../src/assets/imgs/equilibrio/1.jpg"
+import img2 from "../../../src/assets/imgs/equilibrio/2.jpg"
+import img3 from "../../../src/assets/imgs/equilibrio/3.jpg"
+
+
 const Espectaculos = () => {
   const info = useContext(ConfigContext);
-  const particlesInit = async (main) => {
-    console.log(main);
 
-    await loadFull(main);
-  };
-
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
   return (
     <Fragment>
       <div
@@ -37,87 +33,10 @@ const Espectaculos = () => {
         </Container>
       </div>
       <div
-        className="gradient"
-        style={{ background: "black", paddingBottom: "10rem" }}
+        className="gradientEspectaculos"
       >
-        <Particles
-          id="tsparticles"
-          init={particlesInit}
-          loaded={particlesLoaded}
-          options={{
-            background: {
-              color: {
-                value: "transparent",
-              },
-            },
-            fpsLimit: 400,
-            interactivity: {
-              events: {
-                onClick: {
-                  enable: false,
-                  mode: "push",
-                },
-                onHover: {
-                  enable: true,
-                  mode: "repulse",
-                },
-                resize: true,
-              },
-              modes: {
-                push: {
-                  quantity: 4,
-                },
-                repulse: {
-                  distance: 10,
-                  duration: 0.4,
-                },
-              },
-            },
-            particles: {
-              color: {
-                value: "#F7EC1E",
-              },
-              links: {
-                color: "red",
-                distance: 200,
-                enable: true,
-                opacity: 0.1,
-                width: 4,
-              },
-              collisions: {
-                enable: true,
-              },
-              move: {
-                direction: "none",
-                enable: true,
-                outModes: {
-                  default: "bounce",
-                },
-                random: true,
-                speed: 2,
-                straight: true,
-              },
-              number: {
-                density: {
-                  enable: true,
-                  area: 800,
-                },
-                value: 80,
-              },
-              opacity: {
-                value: 0.3,
-              },
-              shape: {
-                type: "circle",
-              },
-              size: {
-                value: { min: 1, max: 5 },
-              },
-            },
-            detectRetina: true,
-          }}
-        />
-        <Container fixed>
+        
+        <Container fixed className="bgSoluttoCirco">
           <Grid container>
             <Grid item xs={12}>
               <Fade left>
@@ -126,37 +45,28 @@ const Espectaculos = () => {
             </Grid>
           </Grid>
           <Grid container columnSpacing={4}>
-            <Grid item xs={12} md={7} className="paddingTop3 lineSpacing">
+            <Grid item xs={12} md={12} className="paddingTop3 lineSpacing">
               <Fade left>
                 <h3 className="content">
                   {parse(info.data.espectaculos.content)}
                 </h3>
               </Fade>
             </Grid>
-            <Grid item xs={12} md={5}>
-              <Fade right>
-                <img
-                  src={img}
-                  className="frame"
-                  width="100%"
-                  alt="Cargando Solutto Img..."
-                ></img>
-              </Fade>
-            </Grid>
           </Grid>
         </Container>
+
         <DividerSolutto />
-        <Container fixed className="bgSolutto2008">
+
+        <Container fixed className="bgSoluttoCirco">
           <Grid container>
             <Grid item xs={12}>
               <Fade left>
-                <h1 style={{ color: "white" }}>
+                <h1 style={{ color: "#512b5b", fontWeight: "bold" }}>
                   {info.data.espectaculos.title2}
                 </h1>
               </Fade>
             </Grid>
           </Grid>
-
           <Grid container columnSpacing={4}>
             <Grid item xs={12} md={12} className="paddingTop3 lineSpacing">
               <Fade left>
@@ -167,19 +77,19 @@ const Espectaculos = () => {
             </Grid>
           </Grid>
         </Container>
+
         <DividerSolutto />
 
         <Container fixed className="bgSoluttoCirco">
           <Grid container>
             <Grid item xs={12}>
               <Fade left>
-                <h1 style={{ color: "white" }}>
+                <h1 style={{ color: "#512b5b", fontWeight: "bold" }}>
                   {info.data.espectaculos.title3}
                 </h1>
               </Fade>
             </Grid>
           </Grid>
-
           <Grid container columnSpacing={4}>
             <Grid item xs={12} md={12} className="paddingTop3 lineSpacing">
               <Fade left>
@@ -193,17 +103,16 @@ const Espectaculos = () => {
 
         <DividerSolutto />
 
-        <Container fixed className="bgSolutto2008">
+        <Container fixed className="bgSoluttoCirco">
           <Grid container>
             <Grid item xs={12}>
               <Fade left>
-                <h1 style={{ color: "white" }}>
+                <h1 style={{ color: "#512b5b", fontWeight: "bold" }}>
                   {info.data.espectaculos.title4}
                 </h1>
               </Fade>
             </Grid>
           </Grid>
-
           <Grid container columnSpacing={4}>
             <Grid item xs={12} md={12} className="paddingTop3 lineSpacing">
               <Fade left>
@@ -217,17 +126,16 @@ const Espectaculos = () => {
 
         <DividerSolutto />
 
-        <Container fixed className="bgSolutto2008">
+        <Container fixed className="bgSoluttoCirco">
           <Grid container>
             <Grid item xs={12}>
               <Fade left>
-                <h1 style={{ color: "white" }}>
+                <h1 style={{ color: "#512b5b", fontWeight: "bold" }}>
                   {info.data.espectaculos.title5}
                 </h1>
               </Fade>
             </Grid>
           </Grid>
-
           <Grid container columnSpacing={4}>
             <Grid item xs={12} md={12} className="paddingTop3 lineSpacing">
               <Fade left>
@@ -237,21 +145,31 @@ const Espectaculos = () => {
               </Fade>
             </Grid>
           </Grid>
+          <Grid container columnSpacing={4}>
+              <Grid item xs={4} md={4}>
+                <img src={img1} alt="img..." width={"100%"} className="imgBorder" />
+              </Grid>
+              <Grid item xs={4} md={4}>
+                <img src={img3} alt="img..." width={"100%"} className="imgBorder" />
+              </Grid>
+              <Grid item xs={4} md={4}>
+                <img src={img2} alt="img..." width={"100%"} className="imgBorder" />
+              </Grid>
+            </Grid>
         </Container>
 
         <DividerSolutto />
 
-        <Container fixed className="">
+        <Container fixed className="bgSoluttoVolare">
           <Grid container>
             <Grid item xs={12}>
               <Fade left>
-                <h1 style={{ color: "#512b5b" }}>
+                <h1 style={{ color: "#512b5b", fontWeight: "bold" }}>
                   {info.data.espectaculos.title6}
                 </h1>
               </Fade>
             </Grid>
           </Grid>
-
           <Grid container columnSpacing={4}>
             <Grid item xs={12} md={7} className="paddingTop3 lineSpacing">
               <Fade left>
@@ -273,6 +191,7 @@ const Espectaculos = () => {
           </Grid>
           <GaleriaVolare />
         </Container>
+        
       </div>
     </Fragment>
   );

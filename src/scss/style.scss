@@ -76,12 +76,21 @@
 
 
 .bgSoluttoCirco {
-  background-image: url("../assets/imgs/soluttoCirco.png");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #bab6bb09;
 }
+
+.bgSoluttoVolare {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000c7;
+}
+
+
 
 .bgSolutto2008 {
   background-image: url("../assets/imgs/Solutto2008.png");
@@ -127,18 +136,26 @@
 
 .gradient {
   background-color: black;
-  /* The image used */
   background-image: url("../assets/imgs/soluttoTrans2.png");
-
-  /* Set a specific height */
   min-height: 500px;
-
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+.gradientEspectaculos {
+  background-color: black;
+  background-image: url("../assets/imgs/bgEspectaculos.JPG");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 .image-gallery {
   width: 100%;
   height: auto;
@@ -160,4 +177,8 @@
 .containerSolutto{
   height: 100vh;
   background-color: rgba($color: #aaaaaa, $alpha: 0.04);
+}
+
+.imgBorder{
+  border: 5px dashed #512b5b;
 }

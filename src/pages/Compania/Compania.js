@@ -12,6 +12,10 @@ import DividerSolutto from "../../components/Divider/DividerSolutto";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
+import img1 from "../../../src/assets/imgs/producciones/1.JPG"
+import img2 from "../../../src/assets/imgs/producciones/2.JPG"
+import img3 from "../../../src/assets/imgs/producciones/3.JPG"
+
 const Compania = () => {
   const info = useContext(ConfigContext);
   const particlesInit = async (main) => {
@@ -51,7 +55,7 @@ const Compania = () => {
                 value: "transparent",
               },
             },
-            fpsLimit: 400,
+            fpsLimit: 100,
             interactivity: {
               events: {
                 onClick: {
@@ -66,7 +70,7 @@ const Compania = () => {
               },
               modes: {
                 push: {
-                  quantity: 4,
+                  quantity: 0,
                 },
                 repulse: {
                   distance: 10,
@@ -103,7 +107,7 @@ const Compania = () => {
                   enable: true,
                   area: 800,
                 },
-                value: 80,
+                value: 10,
               },
               opacity: {
                 value: 0.5,
@@ -142,11 +146,22 @@ const Compania = () => {
           </Container>
         </Fade>
         <DividerSolutto />
-        <br/>
+        <br />
         <Fade right>
           <Container fixed className="containerSolutto">
             <h1 className="title">{info.data.compania.title3}</h1>
             <h3 className="content">{parse(info.data.compania.content3)}</h3>
+            <Grid container columnSpacing={4}>
+              <Grid item xs={4} md={4}>
+                <img src={img1} alt="img..." width={"100%"} className="imgBorder" />
+              </Grid>
+              <Grid item xs={4} md={4}>
+                <img src={img3} alt="img..." width={"100%"} className="imgBorder" />
+              </Grid>
+              <Grid item xs={4} md={4}>
+                <img src={img2} alt="img..." width={"100%"} className="imgBorder" />
+              </Grid>
+            </Grid>
           </Container>
         </Fade>
       </div>
