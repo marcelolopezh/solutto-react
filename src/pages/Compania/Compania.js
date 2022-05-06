@@ -12,18 +12,14 @@ import DividerSolutto from "../../components/Divider/DividerSolutto";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-import img1 from "../../../src/assets/imgs/producciones/1.JPG"
-import img2 from "../../../src/assets/imgs/producciones/2.JPG"
-import img3 from "../../../src/assets/imgs/producciones/3.JPG"
+import img1 from "../../../src/assets/imgs/producciones/1.JPG";
+import img2 from "../../../src/assets/imgs/producciones/2.JPG";
+import img3 from "../../../src/assets/imgs/producciones/3.JPG";
 
 const Compania = () => {
   const info = useContext(ConfigContext);
   const particlesInit = async (main) => {
     console.log(main);
-
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(main);
   };
 
@@ -116,54 +112,76 @@ const Compania = () => {
                 type: "circle",
               },
               size: {
-                value: { min: 1, max: 5 },
+                value: { min: 1, max: 7 },
               },
             },
             detectRetina: true,
           }}
         />
         <Fade right>
-          <Container className="containerSolutto">
+          <Container className="">
             <h1 className="title">{info.data.compania.title}</h1>
             <h3 className="content">{parse(info.data.compania.content)}</h3>
           </Container>
         </Fade>
+
         <DividerSolutto />
-        <Fade right>
-          <Container fixed className="containerSolutto" style={{ marginTop: "2rem" }}>
-            <Grid container columnSpacing={0}>
-              <Grid item md={7} xs={12}>
+
+        <Container fixed style={{ marginTop: "2rem" }}>
+          <Fade right>
+            <Grid container columnSpacing={3}>
+              <Grid item xs={12} md={7}>
                 <h1 className="titleFernando">{info.data.compania.title2}</h1>
                 <h3 className="content">
                   {parse(info.data.compania.content2)}
                 </h3>
               </Grid>
-              <Grid item md={5} xs={12} style={{ textAlign: "center" }}>
-                <img src={fernandoMardones} width={"70%"} className="frame" />
+              <Grid item xs={12} md={5} style={{ textAlign: "center" }}>
+                <img
+                  src={fernandoMardones}
+                  width={"70%"}
+                  alt="Fernando Mardones"
+                />
                 <h2 className="titleFernando">Fernando Mardones Salazar</h2>
               </Grid>
             </Grid>
-          </Container>
-        </Fade>
+          </Fade>
+        </Container>
+
         <DividerSolutto />
-        <br />
-        <Fade right>
-          <Container fixed className="containerSolutto">
+
+        <Container fixed className="">
+          <Fade right>
             <h1 className="title">{info.data.compania.title3}</h1>
             <h3 className="content">{parse(info.data.compania.content3)}</h3>
             <Grid container columnSpacing={4}>
-              <Grid item xs={4} md={4}>
-                <img src={img1} alt="img..." width={"100%"} className="imgBorder" />
+              <Grid item xs={12} md={4}>
+                <img
+                  src={img1}
+                  alt="img..."
+                  width={"100%"}
+                  className="imgBorder"
+                />
               </Grid>
-              <Grid item xs={4} md={4}>
-                <img src={img3} alt="img..." width={"100%"} className="imgBorder" />
+              <Grid item xs={12} md={4}>
+                <img
+                  src={img3}
+                  alt="img..."
+                  width={"100%"}
+                  className="imgBorder"
+                />
               </Grid>
-              <Grid item xs={4} md={4}>
-                <img src={img2} alt="img..." width={"100%"} className="imgBorder" />
+              <Grid item xs={12} md={4}>
+                <img
+                  src={img2}
+                  alt="img..."
+                  width={"100%"}
+                  className="imgBorder"
+                />
               </Grid>
             </Grid>
-          </Container>
-        </Fade>
+          </Fade>
+        </Container>
       </div>
     </Fragment>
   );

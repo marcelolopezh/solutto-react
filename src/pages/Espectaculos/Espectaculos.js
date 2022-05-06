@@ -10,11 +10,13 @@ import Fade from "react-reveal/Fade";
 import DividerSolutto from "../../components/Divider/DividerSolutto";
 import GaleriaVolare from "../Galeria/GaleriaVolare";
 
+import img1 from "../../../src/assets/imgs/equilibrio/1.jpg";
+import img2 from "../../../src/assets/imgs/equilibrio/2.jpg";
+import img3 from "../../../src/assets/imgs/equilibrio/3.jpg";
 
-import img1 from "../../../src/assets/imgs/equilibrio/1.jpg"
-import img2 from "../../../src/assets/imgs/equilibrio/2.jpg"
-import img3 from "../../../src/assets/imgs/equilibrio/3.jpg"
-
+import v1 from "../../../src/assets/imgs/variete/1.jpg";
+import v2 from "../../../src/assets/imgs/variete/2.JPG";
+import v3 from "../../../src/assets/imgs/variete/3.jpg";
 
 const Espectaculos = () => {
   const info = useContext(ConfigContext);
@@ -32,11 +34,8 @@ const Espectaculos = () => {
           </Fade>
         </Container>
       </div>
-      <div
-        className="gradientEspectaculos"
-      >
-        
-        <Container fixed className="bgSoluttoCirco">
+      <div className="gradientEspectaculos">
+        <Container fixed className="bgSoluttoCirco vh100">
           <Grid container>
             <Grid item xs={12}>
               <Fade left>
@@ -120,6 +119,32 @@ const Espectaculos = () => {
                   {parse(info.data.espectaculos.content4)}
                 </h3>
               </Fade>
+              <Grid container columnSpacing={4}>
+                <Grid item xs={12} md={4}>
+                  <img
+                    src={v1}
+                    alt="img..."
+                    width={"100%"}
+                    className="imgBorder"
+                  />
+                </Grid>
+                <Grid item xs={12} md={4}>
+                  <img
+                    src={v3}
+                    alt="img..."
+                    width={"100%"}
+                    className="imgBorder"
+                  />
+                </Grid>
+                <Grid item xs={12} md={4}>
+                  <img
+                    src={v2}
+                    alt="img..."
+                    width={"100%"}
+                    className="imgBorder"
+                  />
+                </Grid>
+              </Grid>
             </Grid>
           </Grid>
         </Container>
@@ -146,22 +171,38 @@ const Espectaculos = () => {
             </Grid>
           </Grid>
           <Grid container columnSpacing={4}>
-              <Grid item xs={4} md={4}>
-                <img src={img1} alt="img..." width={"100%"} className="imgBorder" />
-              </Grid>
-              <Grid item xs={4} md={4}>
-                <img src={img3} alt="img..." width={"100%"} className="imgBorder" />
-              </Grid>
-              <Grid item xs={4} md={4}>
-                <img src={img2} alt="img..." width={"100%"} className="imgBorder" />
-              </Grid>
+            <Grid item xs={12} md={4}>
+              <img
+                src={img1}
+                alt="img..."
+                width={"100%"}
+                className="imgBorder"
+              />
             </Grid>
+            <Grid item xs={12} md={4}>
+              <img
+                src={img3}
+                alt="img..."
+                width={"100%"}
+                className="imgBorder"
+              />
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <img
+                src={img2}
+                alt="img..."
+                width={"100%"}
+                className="imgBorder"
+              />
+            </Grid>
+          </Grid>
         </Container>
 
         <DividerSolutto />
 
         <Container fixed className="bgSoluttoVolare">
           <Grid container>
+
             <Grid item xs={12}>
               <Fade left>
                 <h1 style={{ color: "#512b5b", fontWeight: "bold" }}>
@@ -172,13 +213,15 @@ const Espectaculos = () => {
           </Grid>
           <Grid container columnSpacing={4}>
             <Grid item xs={12} md={7} className="paddingTop3 lineSpacing">
+            <GaleriaVolare />
+
               <Fade left>
                 <h2 className="content">
                   {parse(info.data.espectaculos.content6)}
                 </h2>
               </Fade>
             </Grid>
-            <Grid item xs={12} md={5} className="">
+            <Grid item xs={12} md={5} className="bottomContent">
               <Fade rigth>
                 <img
                   src={volare}
@@ -189,9 +232,7 @@ const Espectaculos = () => {
               </Fade>
             </Grid>
           </Grid>
-          <GaleriaVolare />
         </Container>
-        
       </div>
     </Fragment>
   );

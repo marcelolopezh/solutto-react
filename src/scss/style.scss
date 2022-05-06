@@ -67,7 +67,6 @@
   padding-top: 3.6rem;
 }
 .bgSolutto {
-  background-image: url("../assets/imgs/soluttoTrans.png");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,11 +75,15 @@
 
 
 .bgSoluttoCirco {
-  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #bab6bb09;
+  background-color: #11020b7d;
+  padding-top: 3rem;
+  padding-bottom:3rem;
+}
+.vh100{
+  height: 100vh;
 }
 
 .bgSoluttoVolare {
@@ -93,7 +96,6 @@
 
 
 .bgSolutto2008 {
-  background-image: url("../assets/imgs/Solutto2008.png");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -101,9 +103,9 @@
 }
 
 .frame {
-  -webkit-animation: zoomeffect 4s infinite;
-  -moz-animation: zoomeffect 4s infinite;
-  animation: zoomeffect 4s infinite;
+  -webkit-animation: zoomeffect 10s infinite;
+  -moz-animation: zoomeffect 10s infinite;
+  animation: zoomeffect 10s infinite;
 }
 @-webkit-keyframes zoomeffect {
   0% {
@@ -181,4 +183,9 @@
 
 .imgBorder{
   border: 5px dashed #512b5b;
+}
+
+.bottomContent{
+  display: inline-block;
+  align-self: flex-end;
 }

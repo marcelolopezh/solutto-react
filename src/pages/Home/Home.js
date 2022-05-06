@@ -4,7 +4,7 @@ import React, { useContext, useState } from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import english from "../../assets/imgs/ingles.png";
-import español from "../../assets/imgs/español.png";
+import español from "../../assets/imgs/espanol.png";
 import logoCuadrado from "../../assets/imgs/logo-cuadrado.png";
 import "../../scss/home.scss";
 import { Typography } from "@mui/material";
