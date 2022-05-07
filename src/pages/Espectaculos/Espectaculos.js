@@ -18,9 +18,12 @@ import v1 from "../../../src/assets/imgs/variete/1.jpg";
 import v2 from "../../../src/assets/imgs/variete/2.JPG";
 import v3 from "../../../src/assets/imgs/variete/3.jpg";
 
-import do1 from "../../../src/assets/imgs/2008/1.jpeg"
-import do2 from "../../../src/assets/imgs/2008/2.jpeg"
-import do3 from "../../../src/assets/imgs/2008/3.jpeg"
+import do1 from "../../../src/assets/imgs/2008/1.jpeg";
+import do2 from "../../../src/assets/imgs/2008/2.jpeg";
+import do3 from "../../../src/assets/imgs/2008/3.jpeg";
+
+import dd1 from "../../../src/assets/imgs/2010/1.JPG";
+import Galeria2008 from "../Galeria/Galeria2008";
 
 const Espectaculos = () => {
   const info = useContext(ConfigContext);
@@ -39,6 +42,7 @@ const Espectaculos = () => {
         </Container>
       </div>
       <div className="gradientEspectaculos">
+        {/* List Show 
         <Container fixed className="bgSoluttoCirco vh100">
           <Grid container>
             <Grid item xs={12}>
@@ -56,10 +60,8 @@ const Espectaculos = () => {
               </Fade>
             </Grid>
           </Grid>
-        </Container>
-
-        <DividerSolutto />
-
+        </Container>*/}
+        {/* 2008 */}
         <Container fixed className="bgSoluttoCirco">
           <Grid container>
             <Grid item xs={12}>
@@ -71,44 +73,51 @@ const Espectaculos = () => {
             </Grid>
           </Grid>
           <Grid container columnSpacing={4}>
-            <Grid item xs={12} md={12} className="paddingTop3 lineSpacing">
+            <Grid item xs={12} md={6} className="paddingTop3 lineSpacing">
               <Fade left>
                 <h3 className="content">
                   {parse(info.data.espectaculos.content2)}
                 </h3>
               </Fade>
             </Grid>
+            <Grid item xs={12} md={6}>
+              <Fade right>
+                <Galeria2008 />
+              </Fade>
+            </Grid>
           </Grid>
-          <Grid container columnSpacing={4}>
-                <Grid item xs={12} md={4}>
-                  <img
-                    src={do1}
-                    alt="img..."
-                    width={"100%"}
-                    className="imgBorder"
-                  />
-                </Grid>
-                <Grid item xs={12} md={4}>
-                  <img
-                    src={do2}
-                    alt="img..."
-                    width={"100%"}
-                    className="imgBorder"
-                  />
-                </Grid>
-                <Grid item xs={12} md={4}>
-                  <img
-                    src={do3}
-                    alt="img..."
-                    width={"100%"}
-                    className="imgBorder"
-                  />
-                </Grid>
+          <Fade right>
+            <Grid container columnSpacing={4} style={{ paddingTop: "2rem" }}>
+              <Grid item xs={12} md={4}>
+                <img
+                  src={do1}
+                  alt="img..."
+                  width={"100%"}
+                  className="imgBorder"
+                />
               </Grid>
+              <Grid item xs={12} md={4}>
+                <img
+                  src={do2}
+                  alt="img..."
+                  width={"100%"}
+                  className="imgBorder"
+                />
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <img
+                  src={do3}
+                  alt="img..."
+                  width={"100%"}
+                  className="imgBorder"
+                />
+              </Grid>
+            </Grid>
+          </Fade>
         </Container>
 
         <DividerSolutto />
-
+        {/* 2010 */}
         <Container fixed className="bgSoluttoCirco">
           <Grid container>
             <Grid item xs={12}>
@@ -128,10 +137,20 @@ const Espectaculos = () => {
               </Fade>
             </Grid>
           </Grid>
+          <Grid container columnSpacing={4}>
+            <Grid item xs={12} md={12}>
+              <img
+                src={dd1}
+                alt="img..."
+                width={"100%"}
+                className="imgBorder"
+              />
+            </Grid>
+          </Grid>
         </Container>
 
         <DividerSolutto />
-
+        {/* Variete 2016 */}
         <Container fixed className="bgSoluttoCirco">
           <Grid container>
             <Grid item xs={12}>
@@ -149,38 +168,40 @@ const Espectaculos = () => {
                   {parse(info.data.espectaculos.content4)}
                 </h3>
               </Fade>
-              <Grid container columnSpacing={4}>
-                <Grid item xs={12} md={4}>
-                  <img
-                    src={v1}
-                    alt="img..."
-                    width={"100%"}
-                    className="imgBorder"
-                  />
+              <Fade right>
+                <Grid container columnSpacing={4}>
+                  <Grid item xs={12} md={4}>
+                    <img
+                      src={v1}
+                      alt="img..."
+                      width={"100%"}
+                      className="imgBorder"
+                    />
+                  </Grid>
+                  <Grid item xs={12} md={4}>
+                    <img
+                      src={v3}
+                      alt="img..."
+                      width={"100%"}
+                      className="imgBorder"
+                    />
+                  </Grid>
+                  <Grid item xs={12} md={4}>
+                    <img
+                      src={v2}
+                      alt="img..."
+                      width={"100%"}
+                      className="imgBorder"
+                    />
+                  </Grid>
                 </Grid>
-                <Grid item xs={12} md={4}>
-                  <img
-                    src={v3}
-                    alt="img..."
-                    width={"100%"}
-                    className="imgBorder"
-                  />
-                </Grid>
-                <Grid item xs={12} md={4}>
-                  <img
-                    src={v2}
-                    alt="img..."
-                    width={"100%"}
-                    className="imgBorder"
-                  />
-                </Grid>
-              </Grid>
+              </Fade>
             </Grid>
           </Grid>
         </Container>
 
         <DividerSolutto />
-
+        {/* Equilibrio 2018 */}
         <Container fixed className="bgSoluttoCirco">
           <Grid container>
             <Grid item xs={12}>
@@ -200,39 +221,40 @@ const Espectaculos = () => {
               </Fade>
             </Grid>
           </Grid>
-          <Grid container columnSpacing={4}>
-            <Grid item xs={12} md={4}>
-              <img
-                src={img1}
-                alt="img..."
-                width={"100%"}
-                className="imgBorder"
-              />
+          <Fade right>
+            <Grid container columnSpacing={4}>
+              <Grid item xs={12} md={4}>
+                <img
+                  src={img1}
+                  alt="img..."
+                  width={"100%"}
+                  className="imgBorder"
+                />
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <img
+                  src={img3}
+                  alt="img..."
+                  width={"100%"}
+                  className="imgBorder"
+                />
+              </Grid>
+              <Grid item xs={12} md={4}>
+                <img
+                  src={img2}
+                  alt="img..."
+                  width={"100%"}
+                  className="imgBorder"
+                />
+              </Grid>
             </Grid>
-            <Grid item xs={12} md={4}>
-              <img
-                src={img3}
-                alt="img..."
-                width={"100%"}
-                className="imgBorder"
-              />
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <img
-                src={img2}
-                alt="img..."
-                width={"100%"}
-                className="imgBorder"
-              />
-            </Grid>
-          </Grid>
+          </Fade>
         </Container>
 
         <DividerSolutto />
-
+        {/* Volare 2020 */}
         <Container fixed className="bgSoluttoVolare">
           <Grid container>
-
             <Grid item xs={12}>
               <Fade left>
                 <h1 style={{ color: "#512b5b", fontWeight: "bold" }}>
@@ -243,7 +265,7 @@ const Espectaculos = () => {
           </Grid>
           <Grid container columnSpacing={4}>
             <Grid item xs={12} md={7} className="paddingTop3 lineSpacing">
-            <GaleriaVolare />
+              <GaleriaVolare />
 
               <Fade left>
                 <h2 className="content">
