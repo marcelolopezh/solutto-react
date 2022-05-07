@@ -18,6 +18,10 @@ import v1 from "../../../src/assets/imgs/variete/1.jpg";
 import v2 from "../../../src/assets/imgs/variete/2.JPG";
 import v3 from "../../../src/assets/imgs/variete/3.jpg";
 
+import do1 from "../../../src/assets/imgs/2008/1.jpeg"
+import do2 from "../../../src/assets/imgs/2008/2.jpeg"
+import do3 from "../../../src/assets/imgs/2008/3.jpeg"
+
 const Espectaculos = () => {
   const info = useContext(ConfigContext);
 
@@ -75,6 +79,32 @@ const Espectaculos = () => {
               </Fade>
             </Grid>
           </Grid>
+          <Grid container columnSpacing={4}>
+                <Grid item xs={12} md={4}>
+                  <img
+                    src={do1}
+                    alt="img..."
+                    width={"100%"}
+                    className="imgBorder"
+                  />
+                </Grid>
+                <Grid item xs={12} md={4}>
+                  <img
+                    src={do2}
+                    alt="img..."
+                    width={"100%"}
+                    className="imgBorder"
+                  />
+                </Grid>
+                <Grid item xs={12} md={4}>
+                  <img
+                    src={do3}
+                    alt="img..."
+                    width={"100%"}
+                    className="imgBorder"
+                  />
+                </Grid>
+              </Grid>
         </Container>
 
         <DividerSolutto />
