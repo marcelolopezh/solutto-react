@@ -3,10 +3,10 @@ import Error from "../pages/Error/Error";
 import Compania from "../pages/Compania/Compania";
 import Contact from "../pages/Contact/Contact";
 import Espectaculos from "../pages/Espectaculos/Espectaculos";
-import Equilibrio from "../pages/Equilibrio/Equilibrio";
 import Home from "../pages/Home/Home";
 import HomeLayout from "../layouts/HomeLayout";
 import Galeria from "../pages/Galeria/Galeria"
+import Circo from "../pages/Circo/Circo";
 const generalRoutes = [
   {
     path: "*",
@@ -29,9 +29,9 @@ const generalRoutes = [
     component: Espectaculos,
   },
   {
-    path: "/equilibrio",
+    path: "/circo",
     layout: SoluttoLayout,
-    component: Equilibrio,
+    component: Circo,
   },
   {
     path: "/galeria",

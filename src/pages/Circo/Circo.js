@@ -4,10 +4,14 @@ import React, { Fragment, useContext } from "react";
 import Container from "@mui/material/Container";
 import parse from "html-react-parser";
 import "../../scss/style.scss";
-import img from "../../assets/imgs/img_circo2.jpg";
 import Grid from "@mui/material/Grid";
 import { Fade } from "react-reveal";
-import { Bounce } from "react-reveal";
+
+import c1 from "../../../src/assets/imgs/circo/1.jpg";
+import c2 from "../../../src/assets/imgs/circo/2.jpg";
+import c3 from "../../../src/assets/imgs/circo/3.jpg";
+
+
 export default function Circo() {
   const info = useContext(ConfigContext);
 
@@ -36,16 +40,35 @@ export default function Circo() {
                 <h1 className="title">{info.data.circo.title}</h1>
               </Grid>
             </Grid>
-            <h3 className="content">{parse(info.data.circo.content)}</h3>
-            <Grid container className="justifyContent">
-              <Grid item xs={12} md={8}>
-                <Bounce top>
-                  <img
-                    src={img}
-                    style={{ width: "100%" }}
-                    alt="Cargando Solutto Img..."
-                  ></img>
-                </Bounce>
+            <Grid container columnSpacing={3}>
+              <Grid item xs={12} md={6}>
+                <h3 className="content">{parse(info.data.circo.content)}</h3>
+              </Grid>
+              <Grid item xs={12} md={6} mt={4}>
+                <img
+                  src={c1}
+                  alt="img..."
+                  width={"100%"}
+                  className="imgBorder"
+                />
+              </Grid>
+            </Grid>
+            <Grid container columnSpacing={3}>
+              <Grid item xs={2} md={6}>
+                <img
+                  src={c3}
+                  alt="img..."
+                  width={"100%"}
+                  className="imgBorder"
+                />
+              </Grid>
+              <Grid item xs={2} md={6}>
+                <img
+                  src={c2}
+                  alt="img..."
+                  width={"100%"}
+                  className="imgBorder"
+                />
               </Grid>
             </Grid>
           </Container>

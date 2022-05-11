@@ -49,11 +49,11 @@
         "title6": "Espectáculo de Circo de Calle - Volaré",
         "content6": "Klez Mertimón; intrépido aviador, nacido al sur del mundo en medio de un circo pobre por los años 80s. es quien te invita a experimentar una aventura extraordinaria. Un vuelo tan real como mágico, un plan de vuelo que guiara esta travesía única que nos llevara a disfrutar de todo el riesgo, la emoción y el vértigo que generan el equilibrio y las alturas. Este espectáculo se funde entre el publico y las destrezas de Klez, quien sobre su avión biplano, artilugio clave en esta historia, llena de desafíos donde la imaginación necesitara alas para sostenerse. El Clown, el teatro físico, la improvisación, el circo y los malabares contribuyen a que este espectáculo tenga un idioma universal y para toda la familia."
     },
-    "equilibrio": {
-        "pageTitle": "Equilibrio",
-        "subTitle": "Payaso Solutto",
-        "title": "Espectáculo de Circo-Teatro de Calle",
-        "content": "Las habilidades de “Solutto” un intrépido payaso equilibrista, sobre su “rola bola“ comienza el juego con los espectadores, quienes lo acompañan y disfrutan ser parte de la magia del show, es así como van apareciendo en escena malabares, equilibrios y sorpresas que mantienen al público cautivo y con ganas de más. La música, el clown y el bufón generan una atmósfera asombrosa y divertida disponible para toda la familia, en cualquier parte del mundo."
+    "circo":{
+        "pageTitle": "Carpas de Circo",
+        "subTitle":"Espectáculo de Circo y Variedad",
+        "title":"",
+        "content":"La carpa de circo se utiliza para presentar varietés en donde se funden el estilo circense tradicional con el contemporáneo. Con capacidad de hasta 500 personas, logísticamente se puede trasladar a cualquier lugar, brindando la posibilidad de itinerar en donde sea necesario, logrando llegar hasta ahora, a más de 15.000 personas en la región de la Araucanía. Los elencos van rotando dependiendo del concepto de la varieté. En los espectáculos se emplean diversas técnicas como: malabarismo, equilibrio, tela, trapecio, magia, entre otros. Los artistas que participan pueden ser locales, nacionales e internacionales, brindando dinamismo y frescura a cada show. De esta forma nos aseguramos de mantener al público atento y siempre dispuesto a volver a disfrutar de cada espectáculo, generando así un vínculo y la necesidad de volver a la carpa. La visión de este proyecto es poder acercar al circo a lo largo y ancho de todo Chile, llevar este arte a las personas con escaso acceso a bienes culturales."
     },
     "galeria": {
         "pageTitle": "Galería",
