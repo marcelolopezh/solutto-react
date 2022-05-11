@@ -24,7 +24,7 @@ export default function Progress() {
       >
         <Grid item xs={12} md={12}>
           <Fade top>
-            <Typography variant="h1" class="pageTitle" style={{textAlign:"center"}}>
+            <Typography variant="h1" className="pageTitle" style={{textAlign:"center"}}>
               {idioma.lang === "esp" ? "Sitio en Construcción" : "On Working"}
             </Typography>
           </Fade>

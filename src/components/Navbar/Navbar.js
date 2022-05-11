@@ -90,7 +90,7 @@ const ResponsiveAppBar = (props) => {
                         justifyContent:"center"
                       }}
                     >
-                      <Typography textAlign="center" class="title">
+                      <Typography textAlign="center" className="title">
                         {page.text}
                       </Typography>
                     </Link>
