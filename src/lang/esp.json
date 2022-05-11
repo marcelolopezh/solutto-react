@@ -42,24 +42,23 @@
         "content2": "Espectáculo de circo callejero, sus personajes “Solutto y Solvente” apostaron toda su experiencia circense para aventurarse a recorrer el mundo y encontrarse en este espectáculo la “solución clown” para poder viajar por gran parte de Sudamérica, que gracias a este espectáculo les fue posible llevar a cabo esta aventura por más de 2 años recorriendo y repartiendo risas por lugares tan variados de nuestro continente, presentando su espectáculo en la selva ecatuariana, en el caribe colombiano, en los valles sagrados de perú, en la sierra y costa ecuatoriana, en los alto del a paz en Bolivia, Argentina entre otros lugares",
         "title3": "Solutto Circo (2010)",
         "content3": "Espectáculo de circo callejero, sus personajes “Solutto y Solvente” apostaron toda su experiencia para  aventurarse a recorrer el mundo y encontraron en este espectáculo la ‘Solución Clown’ para poder viajar por gran parte de Sudamérica. Gracias a este espectáculo les fue posible llevar a cabo este proyecto y aventurarse por más de 2 años a recorrer sin parar con el fin de ir repartiendo risas por  lugares tan variados de nuestroo continente y además presentando este espectáculo en lugares tan hermosos con la selva y el caribe colombiano, en los valles sagrados o en las playas del norte de perú, en la sierra, selva y costa ecuatoriana, en lo alto de La Paz o en el oriente boliviano. Plazas de argentina y chile por nombrar algunos lugares.",
-        "title4": "",
+        "title4": "Espectáculo de variedades circenses 'VARIETE CIRCUS' (2016)",
         "content4": "",
         "title5": "Espectáculo de Circo de Calle - Equilibrio",
         "content5": "Las habilidades de “Solutto” un hábil y elegante malabarista, payaso, globologo y sin duda un elegante charlatán,  sobre su rola bola comienza el juego con los espectadores,  quienes lo acompañan y disfrutan ser parte de la magia del show, es así como van apareciendo en escena malabares, equilibrios y sorpresas que mantienen al público  cautivo y con ganas de más.  La música, el clown y el bufón generan una atmosfera asombrosa y divertida disponible para toda la familia, en cualquier parte del mundo.",
         "title6": "Espectáculo de Circo de Calle - Volaré",
         "content6": "Klez Mertimón; intrépido aviador, nacido al sur del mundo en medio de un circo pobre por los años 80s. es quien te invita a experimentar una aventura extraordinaria. Un vuelo tan real como mágico, un plan de vuelo que guiara esta travesía única que nos llevara a disfrutar de todo el riesgo, la emoción y el vértigo que generan el equilibrio y las alturas. Este espectáculo se funde entre el publico y las destrezas de Klez, quien sobre su avión biplano, artilugio clave en esta historia, llena de desafíos donde la imaginación necesitara alas para sostenerse. El Clown, el teatro físico, la improvisación, el circo y los malabares contribuyen a que este espectáculo tenga un idioma universal y para toda la familia."
     },
-    "equilibrio": {
-        "pageTitle": "Equilibrio",
-        "subTitle": "Payaso Solutto",
-        "title": "Espectáculo de Circo-Teatro de Calle",
-        "content": "Las habilidades de “Solutto” un intrépido payaso equilibrista, sobre su “rola bola“ comienza el juego con los espectadores, quienes lo acompañan y disfrutan ser parte de la magia del show, es así como van apareciendo en escena malabares, equilibrios y sorpresas que mantienen al público cautivo y con ganas de más. La música, el clown y el bufón generan una atmósfera asombrosa y divertida disponible para toda la familia, en cualquier parte del mundo."
+    "circo":{
+        "pageTitle": "Carpas de Circo",
+        "subTitle":"Espectáculo de Circo y Variedad",
+        "title":"",
+        "content":"La carpa de circo se utiliza para presentar varietés en donde se funden el estilo circense tradicional con el contemporáneo. Con capacidad de hasta 500 personas, logísticamente se puede trasladar a cualquier lugar, brindando la posibilidad de itinerar en donde sea necesario, logrando llegar hasta ahora, a más de 15.000 personas en la región de la Araucanía. Los elencos van rotando dependiendo del concepto de la varieté. En los espectáculos se emplean diversas técnicas como: malabarismo, equilibrio, tela, trapecio, magia, entre otros. Los artistas que participan pueden ser locales, nacionales e internacionales, brindando dinamismo y frescura a cada show. De esta forma nos aseguramos de mantener al público atento y siempre dispuesto a volver a disfrutar de cada espectáculo, generando así un vínculo y la necesidad de volver a la carpa. La visión de este proyecto es poder acercar al circo a lo largo y ancho de todo Chile, llevar este arte a las personas con escaso acceso a bienes culturales."
     },
-    "about": {
-        "pageTitle": "Quien Soy",
+    "galeria": {
+        "pageTitle": "Galería",
         "subTitle": " ",
-        "title": "Fernando Mardones Salazar",
-        "content": "Fundador y director de Solutto circo compañía, al sur de Chile, su país de origen. Inicia su trayectoria en el mundo del circo en el año 2000. Cautivado por esta nueva forma de ver la vida decide seguir su sueño, que es hacer circo, viajar, crear, hacer reír, e ir nutriéndose de grandes referentes de la escena universal circense como: Leo Bassi (Ita.), Jesús Jara (Esp.), Luis Bruscas (Arg.), Andrew Jigalov (Rus.), Abner Eisenberg (Usa) Juan Carlos Muñoz/Baltabarin (Chi.), Chacovachi (Arg), entre otros.<br>Su proceso de investigación en este arte comienza con malabares y de a poco va integrando otras áreas como; Clown, equilibrio y producción, a los cuales ha dedicado más de 20 años de tu trayectoria.<br>Durante sus viajes se ha puesto a prueba en diferentes culturas, logrando conectar con la esencia única de cualquier calle, parque o feria del mundo, eligiendo estos espacios como su escenario favorito.<br>Enamorado de esta forma de vida, continúa regalando risas y comunicando que es posible vivir en un mundo más amable. "
+        "title": "Galería de Imágenes"
     },
     "contact": {
         "pageTitle": "Contacto",

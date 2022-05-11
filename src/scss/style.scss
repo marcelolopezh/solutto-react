@@ -67,31 +67,35 @@
   padding-top: 3.6rem;
 }
 .bgSolutto {
-  background-image: url("../assets/imgs/soluttoTrans.png");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.bgSolutto2 {
-  background-image: url("../assets/imgs/soluttoTrans2.png");
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .bgSoluttoCirco {
-  background-image: url("../assets/imgs/soluttoCirco.png");
-  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #11020b7d;
+  padding-top: 3rem;
+  padding-bottom:3rem;
+}
+.vh100{
+  height: 100vh;
 }
 
+.bgSoluttoVolare {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000000c7;
+}
+
+
+
 .bgSolutto2008 {
-  background-image: url("../assets/imgs/Solutto2008.png");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -99,9 +103,9 @@
 }
 
 .frame {
-  -webkit-animation: zoomeffect 4s infinite;
-  -moz-animation: zoomeffect 4s infinite;
-  animation: zoomeffect 4s infinite;
+  -webkit-animation: zoomeffect 10s infinite;
+  -moz-animation: zoomeffect 10s infinite;
+  animation: zoomeffect 10s infinite;
 }
 @-webkit-keyframes zoomeffect {
   0% {
@@ -134,4 +138,54 @@
 
 .gradient {
   background-color: black;
+  background-image: url("../assets/imgs/soluttoTrans2.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.gradientEspectaculos {
+  background-color: black;
+  background-image: url("../assets/imgs/bgEspectaculos.JPG");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.image-gallery {
+  width: 100%;
+  height: auto;
+}
+
+.image-gallery-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center center;
+}
+
+.fullscreen .image-gallery-slide img {
+  max-height: 100vh;
+}
+
+.containerSolutto{
+  height: 100vh;
+  background-color: rgba($color: #aaaaaa, $alpha: 0.04);
+}
+
+.imgBorder{
+  border: 5px dashed #512b5b;
+}
+
+.bottomContent{
+  display: inline-block;
+  align-self: flex-end;
 }
