@@ -15,14 +15,14 @@ import img2 from "../../../src/assets/imgs/equilibrio/2.jpg";
 import img3 from "../../../src/assets/imgs/equilibrio/3.jpg";
 
 import v1 from "../../../src/assets/imgs/variete/1.jpg";
-import v2 from "../../../src/assets/imgs/variete/2.jpg";
+import v2 from "../../../src/assets/imgs/variete/2.JPG";
 import v3 from "../../../src/assets/imgs/variete/3.jpg";
 
 import do1 from "../../../src/assets/imgs/2008/1.jpeg";
 import do2 from "../../../src/assets/imgs/2008/2.jpeg";
 import do3 from "../../../src/assets/imgs/2008/3.jpeg";
 
-import dd1 from "../../../src/assets/imgs/2010/1.jpg";
+import dd1 from "../../../src/assets/imgs/2010/1.JPG";
 
 import Galeria2008 from "../Galeria/Galeria2008";
 

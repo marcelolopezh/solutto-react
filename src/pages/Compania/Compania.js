@@ -12,9 +12,9 @@ import DividerSolutto from "../../components/Divider/DividerSolutto";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-import img1 from "../../../src/assets/imgs/producciones/1.jpg";
-import img2 from "../../../src/assets/imgs/producciones/2.jpg";
-import img3 from "../../../src/assets/imgs/producciones/3.jpg";
+import img1 from "../../../src/assets/imgs/producciones/1.JPG";
+import img2 from "../../../src/assets/imgs/producciones/2.JPG";
+import img3 from "../../../src/assets/imgs/producciones/3.JPG";
 
 const Compania = () => {
   const info = useContext(ConfigContext);
