@@ -3,12 +3,12 @@ import "../../scss/img-gallery.scss";
 import "../../scss/style.scss";
 import Container from "@mui/material/Container";
 import ImageGallery from "react-image-gallery";
-import img1 from "../../assets/imgs/2008/galeria/1.JPG";
-import img2 from "../../assets/imgs/2008/galeria/2.JPG";
-import img3 from "../../assets/imgs/2008/galeria/3.JPG";
-import img4 from "../../assets/imgs/2008/galeria/4.JPG";
-import img5 from "../../assets/imgs/2008/galeria/5.JPG";
-import img6 from "../../assets/imgs/2008/galeria/6.JPG";
+import img1 from "../../assets/imgs/2008/galeria/1.jpg";
+import img2 from "../../assets/imgs/2008/galeria/2.jpg";
+import img3 from "../../assets/imgs/2008/galeria/3.jpg";
+import img4 from "../../assets/imgs/2008/galeria/4.jpg";
+import img5 from "../../assets/imgs/2008/galeria/5.jpg";
+import img6 from "../../assets/imgs/2008/galeria/6.jpg";
 import Grid from "@mui/material/Grid";
 
 export default function Galeria2008() {
