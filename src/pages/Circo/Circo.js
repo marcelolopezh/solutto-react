@@ -54,7 +54,7 @@ export default function Circo() {
               </Grid>
             </Grid>
             <Grid container columnSpacing={3}>
-              <Grid item xs={2} md={6}>
+              <Grid item xs={12} md={6}>
                 <img
                   src={c3}
                   alt="img..."
@@ -62,7 +62,7 @@ export default function Circo() {
                   className="imgBorder"
                 />
               </Grid>
-              <Grid item xs={2} md={6}>
+              <Grid item xs={12} md={6}>
                 <img
                   src={c2}
                   alt="img..."

@@ -13,10 +13,12 @@ import GaleriaVolare from "../Galeria/GaleriaVolare";
 import img1 from "../../../src/assets/imgs/equilibrio/1.jpg";
 import img2 from "../../../src/assets/imgs/equilibrio/2.jpg";
 import img3 from "../../../src/assets/imgs/equilibrio/3.jpg";
+import img4 from "../../../src/assets/imgs/equilibrio/4.jpg";
 
 import v1 from "../../../src/assets/imgs/variete/1.jpg";
 import v2 from "../../../src/assets/imgs/variete/2.JPG";
 import v3 from "../../../src/assets/imgs/variete/3.jpg";
+import v4 from "../../../src/assets/imgs/variete/4.jpg"
 
 import do1 from "../../../src/assets/imgs/2008/1.jpeg";
 import do2 from "../../../src/assets/imgs/2008/2.jpeg";
@@ -90,16 +92,24 @@ const Espectaculos = () => {
             </Grid>
           </Grid>
           <Grid container columnSpacing={4}>
-            <Grid item xs={12} md={12} className="paddingTop3 lineSpacing">
+            <Grid item xs={12} md={6} className="paddingTop3 lineSpacing">
               <Fade left>
                 <h3 className="content">
                   {parse(info.data.espectaculos.content5)}
                 </h3>
               </Fade>
             </Grid>
+            <Grid item xs={12} md={6} className="paddingTop3">
+              <img
+                src={img4}
+                alt="Solutto Equilibrio ..."
+                style={{ width: "100%" }}
+                className="imgBorder"
+              ></img>
+            </Grid>
           </Grid>
           <Fade right>
-            <Grid container columnSpacing={4}>
+            <Grid container columnSpacing={4} style={{paddingTop:"2rem"}}>
               <Grid item xs={12} md={4}>
                 <img
                   src={img1}
@@ -142,14 +152,18 @@ const Espectaculos = () => {
             </Grid>
           </Grid>
           <Grid container columnSpacing={4}>
-            <Grid item xs={12} md={12} className="paddingTop3 lineSpacing">
+            <Grid item xs={12} md={6} className="paddingTop3 lineSpacing">
+              <img src={v4} style={{width:"100%"}} className="imgBorder"></img>
+            </Grid>
+            <Grid item xs={12} md={6} className="paddingTop3 lineSpacing">
               <Fade left>
                 <h3 className="content">
                   {parse(info.data.espectaculos.content4)}
                 </h3>
               </Fade>
-              <Fade right>
-                <Grid container columnSpacing={4}>
+            </Grid>
+            <Fade right>
+                <Grid container columnSpacing={4}  style={{paddingTop:"2rem"}}> 
                   <Grid item xs={12} md={4}>
                     <img
                       src={v1}
@@ -176,7 +190,6 @@ const Espectaculos = () => {
                   </Grid>
                 </Grid>
               </Fade>
-            </Grid>
           </Grid>
         </Container>
 
@@ -272,7 +285,6 @@ const Espectaculos = () => {
             </Grid>
           </Fade>
         </Container>
-
       </div>
     </Fragment>
   );
