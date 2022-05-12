@@ -5,7 +5,7 @@ import Contact from "../pages/Contact/Contact";
 import Espectaculos from "../pages/Espectaculos/Espectaculos";
 import Home from "../pages/Home/Home";
 import HomeLayout from "../layouts/HomeLayout";
-import Galeria from "../pages/Galeria/Galeria"
+import GaleriaHome from "../pages/Galeria/GaleriaHome";
 import Circo from "../pages/Circo/Circo";
 const generalRoutes = [
   {
@@ -36,7 +36,7 @@ const generalRoutes = [
   {
     path: "/galeria",
     layout: SoluttoLayout,
-    component: Galeria
+    component: GaleriaHome
   },
   {
     path: "/contacto",

@@ -18,8 +18,6 @@ export default function Circo() {
   return (
     <Fragment>
       <div
-        className="container-purple"
-        style={{ background: "#512b5b", paddingTop: "1rem" }}
       >
         <Fade left>
           <Container>
@@ -29,8 +27,7 @@ export default function Circo() {
         </Fade>
       </div>
       <div
-        className="container-black"
-        style={{ background: "black", paddingBottom: "10rem" }}
+  className="gradient"
       >
         {" "}
         <Fade right>
