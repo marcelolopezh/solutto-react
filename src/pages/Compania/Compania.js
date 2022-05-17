@@ -1,6 +1,6 @@
 import { ConfigContext } from "../../providers/ConfigProvider";
 
-import React, { Fragment, useContext } from "react";
+import React, { Fragment, useContext, useState, useEffect } from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import parse from "html-react-parser";
@@ -16,6 +16,10 @@ import img1 from "../../../src/assets/imgs/producciones/1.JPG";
 import img2 from "../../../src/assets/imgs/producciones/2.JPG";
 import img3 from "../../../src/assets/imgs/producciones/3.JPG";
 
+import { Lines } from "react-preloaders2";
+
+
+
 const Compania = () => {
   const info = useContext(ConfigContext);
   const particlesInit = async (main) => {
@@ -26,6 +30,14 @@ const Compania = () => {
   const particlesLoaded = (container) => {
     console.log(container);
   };
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setIsLoading(false), 1000)
+  }, []);
+
+
 
   return (
     <Fragment>
@@ -183,6 +195,7 @@ const Compania = () => {
           </Fade>
         </Container>
       </div>
+      {isLoading ? <Lines animation="slide-left" /> : null}
     </Fragment>
   );
 };

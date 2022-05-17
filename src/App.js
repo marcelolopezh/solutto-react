@@ -3,6 +3,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import routes from "./config/routes";
 import ConfigProvider from "./providers/ConfigProvider";
+
 function App() {
   return (
     <ConfigProvider>
@@ -14,7 +15,7 @@ function App() {
               path={route.path}
               element={
                 <route.layout>
-                  <route.component />
+                    <route.component />
                 </route.layout>
               }
             />
