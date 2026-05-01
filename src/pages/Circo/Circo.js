@@ -5,7 +5,6 @@ import Container from "@mui/material/Container";
 import parse from "html-react-parser";
 import "../../scss/style.scss";
 import Grid from "@mui/material/Grid";
-import { Fade } from "react-reveal";
 
 import c1 from "../../../src/assets/imgs/circo/1.jpg";
 import c2 from "../../../src/assets/imgs/circo/2.jpg";
@@ -19,18 +18,15 @@ export default function Circo() {
     <Fragment>
       <div
       >
-        <Fade left>
           <Container>
             <h1 className={"pageTitle"}>{info.data.circo.pageTitle}</h1>
             <h2 className={"subTitle"}>{info.data.circo.subTitle}</h2>
           </Container>
-        </Fade>
       </div>
       <div
   className="gradient"
       >
         {" "}
-        <Fade right>
           <Container fixed>
             <Grid container>
               <Grid item xs={12}>
@@ -69,7 +65,6 @@ export default function Circo() {
               </Grid>
             </Grid>
           </Container>
-        </Fade>
       </div>
     </Fragment>
   );

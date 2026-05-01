@@ -9,7 +9,6 @@ import logoCuadrado from "../../assets/imgs/logo-cuadrado.png";
 import "../../scss/home.scss";
 import { Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import Fade from "react-reveal/Fade";
 
 export default function Home() {
   let navigate = useNavigate();
@@ -39,15 +38,12 @@ export default function Home() {
           }}
         >
           <Grid item xs={12} md={6}>
-            <Fade top>
               <img src={logoCuadrado} width="100%" />
-            </Fade>
           </Grid>
         </Grid>
 
         <Grid container spacing={12}>
           <Grid item xs={12} md={6}>
-            <Fade left>
               <img
                 src={english}
                 width="100%"
@@ -57,10 +53,8 @@ export default function Home() {
               <Typography className="idiomaText" variant="h5">
                 English
               </Typography>
-            </Fade>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Fade right>
               <img
                 src={español}
                 width="100%"
@@ -70,7 +64,6 @@ export default function Home() {
               <Typography className="idiomaText" variant="h5">
                 Español
               </Typography>
-            </Fade>
           </Grid>
         </Grid>
       </Box>

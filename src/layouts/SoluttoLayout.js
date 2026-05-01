@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import { Typography } from "@mui/material";
 import "../scss/style.scss";
-import Bounce from "react-reveal/Bounce";
 
 export default function SoluttoLayout(props) {
   const { children } = props;
@@ -23,9 +22,7 @@ export default function SoluttoLayout(props) {
           className="footerTitle"
           style={{ fontFamily: "anthon" }}
         >
-          <Bounce bottom>
           www.solutto.cl
-          </Bounce>
         </Typography>
       <Footer />
     </>

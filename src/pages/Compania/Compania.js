@@ -5,7 +5,6 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import parse from "html-react-parser";
 import "../../scss/style.scss";
-import Fade from "react-reveal/Fade";
 import fernandoMardones from "../../assets/imgs/fernandoMardones.png";
 import DividerSolutto from "../../components/Divider/DividerSolutto";
 
@@ -40,12 +39,10 @@ const Compania = () => {
         className="container-purple"
         style={{ background: "#512b5b", paddingTop: "1rem" }}
       >
-        <Fade left>
           <Container>
             <h1 className={"pageTitle"}>{info.data.compania.pageTitle}</h1>
             <h2 className={"subTitle"}>{info.data.compania.subTitle}</h2>
           </Container>
-        </Fade>
       </div>
       <div className="gradient">
         <Particles
@@ -125,17 +122,14 @@ const Compania = () => {
             detectRetina: true,
           }}
         />
-        <Fade right>
           <Container className="">
             <h1 className="title">{info.data.compania.title}</h1>
             <h3 className="content">{parse(info.data.compania.content)}</h3>
           </Container>
-        </Fade>
 
         <DividerSolutto />
 
         <Container fixed style={{ marginTop: "2rem" }}>
-          <Fade right>
             <Grid container columnSpacing={3}>
               <Grid item xs={12} md={7}>
                 <h1 className="titleFernando">{info.data.compania.title2}</h1>
@@ -152,13 +146,11 @@ const Compania = () => {
                 <h2 className="titleFernando">Fernando Mardones Salazar</h2>
               </Grid>
             </Grid>
-          </Fade>
         </Container>
 
         <DividerSolutto />
 
         <Container fixed className="">
-          <Fade right>
             <h1 className="title">{info.data.compania.title3}</h1>
             <h3 className="content">{parse(info.data.compania.content3)}</h3>
             <Grid container columnSpacing={4}>
@@ -187,7 +179,6 @@ const Compania = () => {
                 />
               </Grid>
             </Grid>
-          </Fade>
         </Container>
       </div>
     </Fragment>

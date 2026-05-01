@@ -5,12 +5,10 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Galeria from "./Galeria";
 import "../../scss/style.scss";
-import Fade from "react-reveal/Fade";
 import DividerSolutto from "../../components/Divider/DividerSolutto";
 
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-
 
 const GaleriaHome = () => {
   const info = useContext(ConfigContext);
@@ -29,12 +27,10 @@ const GaleriaHome = () => {
         className="container-purple"
         style={{ background: "#512b5b", paddingTop: "1rem" }}
       >
-        <Fade left>
-          <Container>
-            <h1 className={"pageTitle"}>{info.data.galeria.pageTitle}</h1>
-            <h2 className={"subTitle"}>{info.data.galeria.subTitle}</h2>
-          </Container>
-        </Fade>
+        <Container>
+          <h1 className={"pageTitle"}>{info.data.galeria.pageTitle}</h1>
+          <h2 className={"subTitle"}>{info.data.galeria.subTitle}</h2>
+        </Container>
       </div>
       <div className="gradientEspectaculos">
         <Particles
@@ -114,23 +110,18 @@ const GaleriaHome = () => {
             detectRetina: true,
           }}
         />
-        <Fade right>
-          <Container className="bgSoluttoCirco">
-            <h1 className="title">{info.data.galeria.title}</h1>
-            <Galeria></Galeria>
-          </Container>
-        </Fade>
+        <Container className="bgSoluttoCirco">
+          <h1 className="title">{info.data.galeria.title}</h1>
+          <Galeria></Galeria>
+        </Container>
 
         <DividerSolutto />
 
         <Container fixed style={{ marginTop: "2rem" }}>
-          <Fade right>
-            <Grid container columnSpacing={3}>
-              <Grid item xs={12} md={12}></Grid>
-            </Grid>
-          </Fade>
+          <Grid container columnSpacing={3}>
+            <Grid item xs={12} md={12}></Grid>
+          </Grid>
         </Container>
-
       </div>
     </Fragment>
   );
